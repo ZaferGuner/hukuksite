@@ -231,6 +231,9 @@
             transition: 100ms;
             position: relative;
             margin-top: 10px;
+            margin-left: auto;  /* Kaldırıldı */
+            margin-right: auto; /* Kaldırıldı */
+            display: block;     /* Kaldırıldı */
         }
 
         .noselect span,
@@ -816,7 +819,7 @@
             }
 
             .hero-title-static, .line-1 {
-                font-size: 40px;
+                font-size: 48px;  /* 40px'den 48px'e çıkarıldı */
             }
 
             .line-1 {
@@ -830,7 +833,7 @@
             }
 
             .hero-title-static, .line-1 {
-                font-size: 32px;
+                font-size: 42px;  /* 32px'den 42px'e çıkarıldı */
             }
 
             .hero-subtitle {
@@ -853,7 +856,7 @@
             }
 
             .hero-title-static, .line-1 {
-                font-size: 28px;
+                font-size: 38px;  /* 28px'den 38px'e çıkarıldı */
             }
 
             .line-1 {
@@ -877,7 +880,7 @@
             }
 
             .hero-title-static, .line-1 {
-                font-size: 24px;
+                font-size: 34px;  /* 24px'den 34px'e çıkarıldı */
             }
 
             .line-1 {
@@ -901,7 +904,7 @@
             }
 
             .hero-title-static, .line-1 {
-                font-size: 22px;
+                font-size: 32px;  /* 22px'den 32px'e çıkarıldı */
             }
 
             .line-1 {
@@ -2095,7 +2098,7 @@
             }
 
             .hero-title-static, .line-1 {
-                font-size: 40px;
+                font-size: 48px;  /* 40px'den 48px'e çıkarıldı */
             }
 
             .line-1 {
@@ -2126,7 +2129,7 @@
             }
 
             .hero-title-static, .line-1 {
-                font-size: 32px;
+                font-size: 42px;  /* 32px'den 42px'e çıkarıldı */
             }
 
             .line-1 {
@@ -2313,13 +2316,13 @@
 
         @media (max-width: 992px) {
             .hero-title-static {
-                font-size: 40px;
+                font-size: 48px;  /* 40px'den 48px'e çıkarıldı */
             }
         }
 
         @media (max-width: 768px) {
             .hero-title-static {
-                font-size: 32px;
+                font-size: 42px;  /* 32px'den 42px'e çıkarıldı */
             }
         }
 
@@ -2336,6 +2339,115 @@
             z-index: 9999;
             box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
             font-family: 'Poppins', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .cookie-consent-modal {
+                max-height: 50vh;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch; /* iOS için daha iyi scroll deneyimi */
+            }
+
+            .cookie-consent-container {
+                max-height: 100%;
+                overflow-y: auto;
+            }
+
+            .cookie-consent-main {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .cookie-consent-actions {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 15px;
+            }
+
+            .cookie-settings {
+                max-height: calc(50vh - 100px);
+                overflow-y: auto;
+                padding-right: 10px;
+            }
+
+            /* Scroll çubuğu stilleri */
+            .cookie-consent-modal::-webkit-scrollbar,
+            .cookie-settings::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            .cookie-consent-modal::-webkit-scrollbar-track,
+            .cookie-settings::-webkit-scrollbar-track {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 3px;
+            }
+
+            .cookie-consent-modal::-webkit-scrollbar-thumb,
+            .cookie-settings::-webkit-scrollbar-thumb {
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 3px;
+            }
+
+            .cookie-consent-modal::-webkit-scrollbar-thumb:hover,
+            .cookie-settings::-webkit-scrollbar-thumb:hover {
+                background: rgba(255, 255, 255, 0.4);
+            }
+
+            /* Butonların mobil görünümü */
+            .cookie-btn {
+                width: 100%;
+                max-width: 200px;
+                text-align: center;
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+
+            /* Kategori başlıkları ve içerik aralıkları */
+            .cookie-category {
+                margin-bottom: 15px;
+                padding: 12px;
+            }
+
+            .cookie-category-header h5 {
+                font-size: 14px;
+            }
+
+            .cookie-category-details p {
+                font-size: 13px;
+                line-height: 1.4;
+            }
+        }
+
+        /* iPhone SE ve benzer küçük ekranlar için ek düzenlemeler */
+        @media (max-width: 375px) {
+            .cookie-consent-modal {
+                padding: 15px;
+                max-height: 60vh;
+            }
+
+            .cookie-consent-text h3 {
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+
+            .cookie-consent-text p {
+                font-size: 12px;
+                line-height: 1.3;
+            }
+
+            .cookie-btn {
+                padding: 10px 12px;
+                font-size: 12px;
+            }
+        }
+
+        /* Çerez ayarları bölümü için ek düzenlemeler */
+        .cookie-settings {
+            display: none;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
         }
 
         .cookie-consent-container {
@@ -3787,7 +3899,7 @@
         /* Özellikle 320-375px arası (çok küçük ekranlar) için ek düzenlemeler */
         @media (min-width: 320px) and (max-width: 375px) {
             .hero-title-static, .line-1 {
-                font-size: 20px !important;
+                font-size: 30px !important; /* 20px'den 30px'e çıkarıldı */
             }
 
             .hero-subtitle {
@@ -4662,28 +4774,14 @@
             }
 
             .hero-title-static {
-                font-size: 22px !important;
+                font-size: 32px !important; /* 22px'den 32px'e çıkarıldı */
                 line-height: 1.3 !important;
                 letter-spacing: -0.2px !important;
-                word-break: break-word !important;
-                text-align: center !important;
-                margin-bottom: 5px !important;
-                padding: 0 10px !important;
             }
 
             .line-1 {
-                font-size: 22px !important;
+                font-size: 32px !important; /* 22px'den 32px'e çıkarıldı */
                 line-height: 1.3 !important;
-                width: 100% !important;
-                max-width: 320px !important;
-                margin: 0 auto !important;
-                padding: 0 10px !important;
-                white-space: normal !important;
-                text-align: center !important;
-                border-right: none !important;
-                word-break: break-word !important;
-                min-height: auto !important;
-                height: auto !important;
             }
 
             .hero-subtitle {
@@ -4772,6 +4870,27 @@
                 padding: 0 15px !important;
                 line-height: 1.4 !important;
             }
+        }
+
+        /* Form container için yeni stil */
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Tüm form grupları için tam genişlik */
+        .form-group {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        /* Buton container için yeni stil */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -5457,12 +5576,14 @@
                     <div class="form-group">
                         <textarea class="form-control" placeholder="Mesajınız" required></textarea>
                     </div>
-                    <button type="submit" class="noselect">
-                        <span>Gönder</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/>
-                        </svg>
-                    </button>
+                    <div class="button-container">
+                        <button type="submit" class="noselect">
+                            <span>Gönder</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/>
+                            </svg>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -5712,7 +5833,7 @@
             <li>Verilerin işlenmesine itiraz etme</li>
         </ul>
 
-        <p>Kişisel verilerinizle ilgili herhangi bir sorunuz veya talebiniz varsa, lütfen <a href="mailto:info@adalethukuk.com">info@adalethukuk.com</a> adresinden bize ulaşın.</p>
+        <p>Kişisel verilerinizle ilgili herhangi bir sorunuz veya talebiniz varsa, lütfen <a href="mailto:av.teomanizgioglu@gmail.com">av.teomanizgioglu@gmail.com</a> adresinden bize ulaşın.</p>
 
         <h3>Politika Değişiklikleri</h3>
         <p>Çerez politikamızı zaman zaman güncelleyebiliriz. Önemli değişiklikler olması durumunda, web sitemizde bir bildirim yayınlayacağız. Bu politika en son 8 Mayıs 2025 tarihinde güncellenmiştir.</p>
