@@ -22,20 +22,6 @@ Bu proje, İzgioğlu & Soydinç Hukuk Bürosu'nun kurumsal web sitesinin kaynak 
 - Owl Carousel
 - Ion Icons
 
-## Kurulum
-
-1. Repoyu klonlayın:
-```bash
-git clone https://github.com/kullaniciadi/izgioglusoydinc.git
-```
-
-2. Proje dizinine gidin:
-```bash
-cd izgioglusoydinc
-```
-
-3. index.html dosyasını bir web tarayıcısında açın.
-
 ## Geliştirme
 
 Projeyi geliştirmek için:
