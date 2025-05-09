@@ -35,9 +35,3 @@ Projeyi geliştirmek için:
 ## Lisans
 
 Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır.
-
-## İletişim
-
-- Website: [izgioglusoydinc.com.tr](https://izgioglusoydinc.com.tr)
-- E-posta: av.teomanizgioglu@gmail.com
-- Telefon: +90 538 443 45 85 
