@@ -1,0 +1,5310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İzgioğlu & Soydinç | Profesyonel Hukuk Bürosu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --primary-color: #4E6E81;    /* Koyu mavi-gri */
+            --secondary-color: #F9DBBB;  /* Açık bej */
+            --accent-color: #FF0303;     /* Kırmızı */
+            --dark-color: #2E3840;       /* Koyu gri */
+            --light-color: #F5F5F5;      /* Beyaz tonlu gri */
+            --text-color: #2E3840;       /* Koyu gri - metin rengi */
+            --icon-color: #4E6E81;       /* Koyu mavi-gri - ikonlar için */
+            --accent: #FF0303;           /* Kırmızı - vurgu rengi */
+            --bluefade: #4E6E81;         /* Koyu mavi-gri - geçiş rengi */
+            --gradient: #F9DBBB;         /* Açık bej - gradyan rengi */
+            --mail-primary: #FF0303;     /* Kırmızı - mail birincil renk */
+            --mail-secondary: #4E6E81;   /* Koyu mavi-gri - mail ikincil renk */
+            --mail-tertiary: #2E3840;    /* Koyu gri - mail üçüncül renk */
+            --mobile-splash-bg-color: #4E6E81;  /* Koyu mavi-gri arka plan */
+            --mobile-text-color: #F5F5F5;      /* Beyaz tonlu metin */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            overflow-x: hidden;
+            background-color: var(--light-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Buton Stilleri */
+        .btn {
+            padding: 17px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 0;
+            background-color: var(--light-color);
+            box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-size: 15px;
+            transition: all 0.5s ease;
+            display: inline-block;
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        .btn:hover {
+            letter-spacing: 3px;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            box-shadow: var(--secondary-color) 0px 7px 29px 0px;
+        }
+
+        .btn:active {
+            letter-spacing: 3px;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            box-shadow: var(--secondary-color) 0px 0px 0px 0px;
+            transform: translateY(10px);
+            transition: 100ms;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--light-color);
+            color: var(--light-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            box-shadow: var(--light-color) 0px 7px 29px 0px;
+        }
+
+        .btn-outline:active {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            box-shadow: var(--light-color) 0px 0px 0px 0px;
+        }
+
+        .btn-white {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+        }
+
+        .btn-white:hover {
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+            box-shadow: var(--primary-color) 0px 7px 29px 0px;
+        }
+
+        .btn-white:active {
+            background-color: var(--secondary-color);
+            box-shadow: var(--primary-color) 0px 0px 0px 0px;
+        }
+
+        /* Form submit butonu için özel stil */
+        .contact-form button[type="submit"] {
+            /* Eski stiller kaldırıldı */
+        }
+
+        .contact-form button[type="submit"]:hover {
+            /* Eski stiller kaldırıldı */
+        }
+
+        .contact-form button[type="submit"]:active {
+            /* Eski stiller kaldırıldı */
+        }
+
+        /* Çerez butonları için özel stil */
+        .cookie-btn {
+            padding: 17px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 0;
+            background-color: var(--light-color);
+            box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-size: 15px;
+            transition: all 0.5s ease;
+            color: var(--primary-color);
+        }
+
+        .cookie-btn:hover {
+            letter-spacing: 3px;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            box-shadow: var(--secondary-color) 0px 7px 29px 0px;
+        }
+
+        .cookie-btn:active {
+            letter-spacing: 3px;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            box-shadow: var(--secondary-color) 0px 0px 0px 0px;
+            transform: translateY(10px);
+            transition: 100ms;
+        }
+
+        .cookie-btn-accept-all {
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+        }
+
+        .cookie-btn-settings {
+            background-color: transparent;
+            border: 2px solid var(--light-color);
+            color: var(--light-color);
+        }
+
+        .cookie-btn-reject-all {
+            background-color: transparent;
+            color: var(--light-color);
+            text-decoration: underline;
+            padding: 17px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            transition: none;
+            letter-spacing: normal;
+        }
+
+        .cookie-btn-reject-all:hover {
+            text-decoration: underline;
+            background-color: transparent;
+            color: var(--light-color);
+            transform: none;
+            box-shadow: none;
+            letter-spacing: normal;
+        }
+
+        .cookie-btn-reject-all:active {
+            text-decoration: underline;
+            transform: none;
+            box-shadow: none;
+            letter-spacing: normal;
+        }
+
+        .cookie-btn-save {
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+        }
+
+        /* Animated Submit Button */
+        .noselect {
+            width: 150px;
+            height: 50px;
+            background: none;
+            border: 4px solid var(--secondary-color);
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 100ms;
+            position: relative;
+            margin-top: 10px;
+        }
+
+        .noselect span,
+        .noselect svg {
+            position: absolute;
+            color: var(--primary-color);
+            fill: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .noselect.animating {
+            outline: none;
+            border: 2px solid var(--primary-color);
+            width: 50px;
+            border-left: 4px solid var(--primary-color);
+            border-bottom: 4px solid var(--primary-color);
+            animation: spin 2s 500ms forwards;
+        }
+
+        .noselect.animating span {
+            color: transparent;
+        }
+
+        .noselect.animating svg {
+            animation: check 500ms 2300ms forwards;
+        }
+
+        .noselect:focus {
+            outline: 2px solid var(--primary-color);
+        }
+
+        @keyframes spin {
+            80% {
+                border: 4px solid transparent;
+                border-left: 4px solid var(--primary-color);
+            }
+            100% {
+                transform: rotate(1080deg);
+                border: 4px solid var(--primary-color);
+            }
+        }
+
+        @keyframes check {
+            to {
+                fill: var(--secondary-color);
+            }
+        }
+
+        @keyframes circle {
+            to {
+                border: 4px solid var(--primary-color);
+            }
+        }
+
+        .section-title {
+            margin-bottom: 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .section-title p {
+            font-size: 16px;
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+
+        .section-title::after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s;
+            background-color: transparent;
+        }
+
+        .header-top {
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            color: var(--light-color);
+            transition: all 0.3s;
+        }
+
+        .header-top-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header-contact a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s;
+        }
+
+        .header-contact a:hover {
+            color: var(--secondary-color);
+        }
+
+        .header-social {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        /* Animasyonlu Sosyal İkonlar */
+        .social-icons {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin: 0 5px;
+            position: relative;
+            font-size: 1em;
+        }
+
+        .social-icons i {
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 265ms ease-out;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: relative;
+        }
+
+        .social-icons a:before {
+            content: " ";
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            display: block;
+            background: transparent;
+            transition: all 265ms ease-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .social-icons a:hover:before {
+            transform: scale(0);
+            background: transparent;
+            transition: all 265ms ease-in;
+        }
+
+        .social-icons a:hover i {
+            transform: translate(-50%, -50%) scale(2.2);
+            color: var(--icon-color);
+            background: -webkit-linear-gradient(45deg, var(--icon-color), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 265ms ease-in;
+        }
+
+        /* Header sosyal medya bölümü için özel ayarlar */
+        .header-social .social-icons i {
+            font-size: 14px;
+        }
+
+        /* Footer sosyal medya bölümü için özel ayarlar */
+        .footer-social .social-icons a:before {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-social .social-icons a:hover:before {
+            background: transparent;
+        }
+
+        .footer-social .social-icons a:hover i {
+            transform: translate(-50%, -50%) scale(1.8);
+            color: var(--secondary-color);
+            background: -webkit-linear-gradient(45deg, var(--secondary-color), var(--light-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Takım üyeleri için sosyal medya ikonları */
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        /* Team Social ikonlar için güncellenmil stil */
+        .team-social .social-icons a {
+            width: 36px;
+            height: 36px;
+        }
+
+        .team-social .social-icons a:before {
+            width: 36px;
+            height: 36px;
+            background: rgba(42, 59, 76, 0.1);
+        }
+
+        .team-social .social-icons i {
+            font-size: 16px;
+            color: var(--primary-color);
+        }
+
+        .team-social .social-icons a:hover i {
+            transform: translate(-50%, -50%) scale(1.8);
+            color: var(--primary-color);
+            background: -webkit-linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-main {
+            background-color: rgba(255, 255, 255, 0);  /* Using rgba for light-color with 0 opacity */
+            padding: 15px 0;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0);  /* Transparent shadow */
+            transition: all 0.3s;
+        }
+
+        .header-main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: block;
+        }
+
+        .logo img {
+            width: 90px; /* Daha da büyütüldü */
+            height: 90px; /* Daha da büyütüldü */
+            transition: all 0.3s ease;
+        }
+
+        .logo img.logo-white {
+            display: block;
+        }
+
+        .logo img.logo-black {
+            display: none;
+        }
+
+        .logo .title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo h1 {
+            font-size: 24px; /* Eski boyutuna döndürüldü */
+            font-weight: 700;
+            color: var(--light-color);
+            margin: 0;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        .logo h2 {
+            font-size: 16px; /* Eski boyutuna döndürüldü */
+            color: var(--light-color);
+            margin: 0;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        /* Sticky header durumunda logo değişimi */
+        .header.sticky .logo img.logo-white {
+            display: none;
+        }
+
+        .header.sticky .logo img.logo-black {
+            display: block;
+        }
+
+        .header.sticky .logo h1,
+        .header.sticky .logo h2 {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .logo img {
+                width: 70px; /* Mobilde de büyük kalacak şekilde ayarlandı */
+                height: 70px;
+            }
+
+            .logo h1 {
+                font-size: 20px; /* Eski boyutuna döndürüldü */
+            }
+
+            .logo h2 {
+                font-size: 14px; /* Eski boyutuna döndürüldü */
+            }
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        .nav-list {
+            display: flex;
+            position: relative;
+            gap: 25px;
+        }
+
+        .nav-list li {
+            position: relative;
+            list-style: none;
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 60px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .nav-list li::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 60px;
+            background: linear-gradient(45deg, var(--i), var(--j));
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .nav-list li::after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            background: linear-gradient(45deg, var(--i), var(--j));
+            transition: 0.5s;
+            filter: blur(15px);
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .nav-list li:hover {
+            width: 180px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+        }
+
+        .nav-list li:hover::before {
+            opacity: 1;
+        }
+
+        .nav-list li:hover::after {
+            opacity: 0.5;
+        }
+
+        .nav-list li ion-icon {
+            color: #fff;
+            font-size: 1.75em;
+            transition: 0.5s;
+            transition-delay: 0.25s;
+        }
+
+        .nav-list li:hover ion-icon {
+            transform: scale(0);
+            color: #fff;
+            transition-delay: 0s;
+        }
+
+        .nav-list li span {
+            position: absolute;
+        }
+
+        .nav-list li .title {
+            color: #fff;
+            font-size: 1.1em;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transform: scale(0);
+            transition: 0.5s;
+            transition-delay: 0s;
+        }
+
+        .nav-list li:hover .title {
+            transform: scale(1);
+            transition-delay: 0.25s;
+        }
+
+        @media (max-width: 992px) {
+            .nav-list {
+                position: fixed;
+                top: 140px;
+                left: -100%;
+                width: 280px;
+                height: calc(100vh - 140px);
+                background-color: var(--light-color);
+                flex-direction: column;
+                gap: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s;
+                padding: 20px;
+                z-index: 2;
+            }
+
+            .nav-list.active {
+                left: 0;
+            }
+
+            .nav-list li {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .nav-list li:hover {
+                width: 90%;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+        }
+
+        .header.sticky {
+            transform: translateY(-40px);
+        }
+
+        .header.sticky .header-top {
+            background-color: var(--primary-color);
+        }
+
+        .header.sticky .header-main {
+            padding: 10px 0;
+            background-color: rgba(245, 245, 245, 0.95);  /* Light color with 95% opacity */
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header.sticky .logo h1,
+        .header.sticky .logo h2 {
+            color: #000;
+        }
+
+        .header.sticky .nav-list li ion-icon {
+            color: #777;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(rgba(42, 59, 76, 0.85), rgba(26, 37, 48, 0.95)), url('images/backgrounds/hero-bg.png') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 0;
+        }
+
+        .hero-content {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 15px;
+            color: var(--light-color);
+            z-index: 1;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+
+        /* Typewriter Efekti için HTML yapısı */
+        .hero-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero-title-static {
+            font-size: 60px;
+            font-weight: 700;
+            color: var(--light-color);
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .hero-title-static span {
+            color: var(--secondary-color);
+        }
+
+        .line-1 {
+            position: relative;
+            width: 24em;
+            margin: 0;
+            border-right: 2px solid var(--light-color);
+            font-size: 60px;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            color: var(--light-color);
+            font-family: 'Anonymous Pro', monospace;
+        }
+
+        /* Animation */
+        .anim-typewriter {
+            animation: blinkTextCursor 500ms steps(44) infinite normal;
+        }
+
+        @keyframes blinkTextCursor {
+            from { border-right-color: var(--light-color); }
+            to { border-right-color: transparent; }
+        }
+
+        @media (max-width: 992px) {
+            .hero-title-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero-title-static, .line-1 {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title-static, .line-1 {
+                font-size: 32px;
+            }
+        }
+
+        .hero-text {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 30px auto 40px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .hero-shape {
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+        }
+
+        .hero-shape svg {
+            fill: var(--light-color);
+            width: 100%;
+            height: 100%;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 5px solid var(--secondary-color);
+            top: -20px;
+            left: -20px;
+            border-radius: 5px;
+            z-index: -1;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .about-feature-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-color);
+            font-size: 20px;
+        }
+
+        .about-feature h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background-color: rgba(212, 185, 150, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: var(--light-color);
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            height: 200px;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-color);
+            font-size: 50px;
+        }
+
+        .service-content {
+            padding: 30px;
+        }
+
+        .service-content h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .service-content p {
+            margin-bottom: 20px;
+        }
+
+        .service-content a {
+            color: var(--secondary-color);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.3s;
+        }
+
+        .service-content a:hover {
+            gap: 10px;
+        }
+
+        /* Parallax Section */
+        .parallax {
+            padding: 100px 0;
+            background: linear-gradient(rgba(42, 59, 76, 0.9), rgba(26, 37, 48, 0.95)), url('images/backgrounds/parallax-bg.png') center/cover no-repeat fixed;
+            color: var(--light-color);
+            text-align: center;
+        }
+
+        .parallax-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .parallax h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .parallax p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        /* Team Section */
+        .team {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+
+        .team-content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            background-color: var(--light-color);
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            width: 300px;
+            height: 500px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .team-member-image {
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            background-repeat: no-repeat;
+        }
+
+        /* Teoman beyin fotoğrafı için özel stil */
+        #teoman-card .team-member-image {
+            background-size: 70%;
+            background-position: center 100%;
+        }
+
+        /* Batuhan beyin fotoğrafı için özel stil */
+        #batuhan-card .team-member-image {
+            background-size: cover;
+            background-position: center 25%;
+        }
+
+        .team-member-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(42, 59, 76, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .team-member:hover .team-member-overlay {
+            opacity: 1;
+        }
+
+        .team-member-overlay p {
+            color: var(--light-color);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .team-member-content {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .team-member-content h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+            transition: all 0.3s;
+        }
+
+        .team-member:hover .team-member-content h3 {
+            color: var(--secondary-color);
+        }
+
+        .team-member-content span {
+            font-size: 14px;
+            color: var(--secondary-color);
+            display: block;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+
+        .team-member:hover .team-member-content span {
+            color: var(--primary-color);
+        }
+
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        @media (max-width: 992px) {
+            .team-member {
+                width: calc(50% - 15px);
+                height: 450px;
+            }
+            
+            .team-member-image {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .team-member,
+            .team-member:first-child {
+                width: 100%;
+                height: auto;
+                min-height: 400px;
+            }
+            
+            .team-member-image,
+            .team-member:first-child .team-member-image {
+                height: 300px;
+            }
+
+            /* Teoman beyin fotoğrafı için özel mobil stil */
+            #teoman-card .team-member-image {
+                background-size: 20%;
+                background-position: center 50%;
+            }
+
+            /* Batuhan beyin fotoğrafı için özel mobil stil */
+            #batuhan-card .team-member-image {
+                background-size: 20%;
+                background-position: center 50%;
+            }
+
+            .team-member-overlay {
+                padding: 15px;
+            }
+
+            .team-member-overlay p {
+                font-size: 14px;
+                line-height: 1.4;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Daha küçük ekranlar için ek ayarlar */
+            #teoman-card .team-member-image,
+            #batuhan-card .team-member-image {
+                background-size: 45%;
+            }
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 100px 0;
+            background-color: rgba(212, 185, 150, 0.3);
+        }
+
+        .shadow-effect {
+            background: #fff;
+            padding: 30px;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid #ECECEC;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+            position: relative;
+        }
+
+        .shadow-effect::before {
+            content: "\201C";
+            position: absolute;
+            font-size: 80px;
+            font-family: serif;
+            color: var(--secondary-color);
+            opacity: 0.2;
+            top: 10px;
+            left: 20px;
+            line-height: 0.7;
+        }
+
+        .shadow-effect::after {
+            content: "\201D";
+            position: absolute;
+            font-size: 80px;
+            font-family: serif;
+            color: var(--secondary-color);
+            opacity: 0.2;
+            bottom: -20px;
+            right: 20px;
+            line-height: 0.7;
+        }
+
+        #customers-testimonials .shadow-effect p {
+            font-family: inherit;
+            font-size: 17px;
+            line-height: 1.8;
+            margin: 0;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-name {
+            margin: 20px auto 0;
+            display: table;
+            width: auto;
+            background: var(--secondary-color);
+            padding: 9px 35px;
+            border-radius: 12px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+        }
+
+        .testimonial-info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: var(--primary-color);
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        #customers-testimonials .item {
+            text-align: center;
+            padding: 50px 20px;
+            margin-bottom: 80px;
+            opacity: .2;
+            -webkit-transform: scale3d(0.8, 0.8, 1);
+            transform: scale3d(0.8, 0.8, 1);
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #customers-testimonials .owl-item.active.center .item {
+            opacity: 1;
+            -webkit-transform: scale3d(1.0, 1.0, 1);
+            transform: scale3d(1.0, 1.0, 1);
+        }
+
+        #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+        #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+            background: var(--secondary-color);
+            transform: translate3d(0px, -50%, 0px) scale(0.7);
+        }
+
+        #customers-testimonials.owl-carousel .owl-dots {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+        #customers-testimonials.owl-carousel .owl-dots .owl-dot {
+            display: inline-block;
+        }
+
+        #customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+            background: var(--secondary-color);
+            display: inline-block;
+            height: 20px;
+            margin: 0 2px 5px;
+            transform: translate3d(0px, -50%, 0px) scale(0.3);
+            transform-origin: 50% 50% 0;
+            transition: all 250ms ease-out 0s;
+            width: 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 30px;
+        }
+
+        .contact-card {
+            display: flex;
+            gap: 20px;
+            background-color: rgba(212, 185, 150, 0.3);
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        .contact-card-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-color);
+            font-size: 20px;
+        }
+
+        .contact-card-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .contact-card-content p, .contact-card-content a {
+            color: var(--text-color);
+            opacity: 0.7;
+            transition: all 0.3s;
+        }
+
+        .contact-card-content a:hover {
+            color: var(--secondary-color);
+        }
+
+        .contact-form {
+            background-color: rgba(212, 185, 150, 0.3);
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid var(--gray-color);
+            border-radius: 3px;
+            font-family: inherit;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: var(--secondary-color);
+            outline: none;
+        }
+
+        .form-control.error {
+            border-color: #ff3333;
+            background-color: rgba(255, 51, 51, 0.05);
+            animation: shake 0.5s;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+
+        textarea.form-control {
+            height: 150px;
+            resize: vertical;
+        }
+
+        /* Map Section */
+        .map {
+            height: 400px;
+            background-color: rgba(212, 185, 150, 0.2);
+        }
+
+        /* Dış Bağlantılar Section */
+        .links {
+            padding: 100px 0;
+            background-color: var(--light-color);
+            position: relative;
+        }
+
+        .links-grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .links-column {
+            flex: 1;
+            min-width: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+        }
+
+        .links-column-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .links-divider {
+            height: 3px;
+            background-color: var(--secondary-color);
+            width: 60px;
+            margin: 0 auto 20px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background-color: rgba(212, 185, 150, 0.1);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .link-item:hover {
+            background-color: rgba(142, 74, 73, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .link-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--light-color);
+            flex-shrink: 0;
+        }
+
+        .link-text {
+            font-size: 16px;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .link-item:hover .link-text {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 992px) {
+            .links-grid-container {
+                flex-direction: column;
+            }
+
+            .links-column {
+                width: 100%;
+            }
+        }
+
+        /* SSS Section */
+        .faq {
+            padding: 100px 0;
+            background-color: rgba(212, 185, 150, 0.3);
+        }
+
+        .faq-accordion {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: var(--light-color);
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .faq-question h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 0;
+            transition: all 0.3s;
+        }
+
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            background-color: rgba(212, 185, 150, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .faq-question:hover h3 {
+            color: var(--secondary-color);
+        }
+
+        .faq-item.active .faq-question {
+            background-color: rgba(212, 185, 150, 0.2);
+        }
+
+        .faq-item.active .faq-icon {
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px;
+            max-height: 1000px;
+        }
+
+        .faq-answer p {
+            margin-top: 0;
+            opacity: 0.9;
+        }
+
+        .faq-answer ul, .faq-answer ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .faq-answer li {
+            margin-bottom: 5px;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+        }
+
+        .footer-top {
+            padding: 70px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-widget h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-widget h3::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: var(--secondary-color);
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-about p {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--secondary-color);
+            padding-left: 5px;
+        }
+
+        .footer-contact ul li {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .footer-contact ul li i {
+            color: var(--secondary-color);
+            font-size: 18px;
+        }
+
+        .footer-newsletter p {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .footer-newsletter form {
+            display: none; /* Eski form gizlendi */
+        }
+
+        /* Daha küçük ve kompakt animasyonlu mail */
+        .letter-image {
+            position: relative;
+            width: 60px;  /* Zarfın genişliği küçültüldü */
+            height: 50px;  /* Zarfın yüksekliği küçültüldü */
+            margin: 0;
+            cursor: pointer;
+            display: inline-block;
+            background: transparent;
+        }
+
+        .animated-mail {
+            position: absolute;
+            height: 40px;  /* Animasyonlu zarfın yüksekliği küçültüldü */
+            width: 50px;   /* Animasyonlu zarfın genişliği küçültüldü */
+            transition: 0.4s;
+            background: transparent;
+        }
+
+        .animated-mail .body {
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 30px 50px;  /* Border boyutları küçültüldü */
+            border-color: transparent transparent var(--mail-primary) transparent;
+            z-index: 2;
+            background: transparent;
+        }
+
+        .animated-mail .top-fold {
+            position: absolute;
+            top: 15px;  /* Pozisyon ayarlandı */
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 25px 0 25px;  /* Border boyutları küçültüldü */
+            transform-origin: 50% 0%;
+            transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+            border-color: var(--mail-secondary) transparent transparent transparent;
+            z-index: 2;
+            background: transparent;
+        }
+
+        .animated-mail .back-fold {
+            position: absolute;
+            bottom: 0;
+            width: 50px;  /* Genişlik küçültüldü */
+            height: 30px;  /* Yükseklik küçültüldü */
+            background: var(--mail-secondary);
+            z-index: 0;
+            opacity: 0.8;
+        }
+
+        .animated-mail .left-fold {
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 0 15px 25px;  /* Border boyutları küçültüldü */
+            border-color: transparent transparent transparent var(--mail-tertiary);
+            z-index: 2;
+            background: transparent;
+        }
+
+        .animated-mail .letter {
+            left: 5px;  /* Pozisyon ayarlandı */
+            bottom: 0px;
+            position: absolute;
+            width: 40px;  /* Genişlik küçültüldü */
+            height: 25px;  /* Yükseklik küçültüldü */
+            background: rgba(255, 255, 255, 0.9);
+            z-index: 1;
+            overflow: hidden;
+            transition: 0.4s 0.2s;
+        }
+
+        .animated-mail .letter .letter-border {
+            height: 4px;  /* Yükseklik küçültüldü */
+            width: 100%;
+            background: repeating-linear-gradient(-45deg, var(--mail-secondary), var(--mail-secondary) 3px, transparent 3px, transparent 6px);
+        }
+
+        .animated-mail .letter .letter-title {
+            margin-top: 4px;  /* Margin küçültüldü */
+            margin-left: 3px;  /* Margin küçültüldü */
+            height: 4px;  /* Yükseklik küçültüldü */
+            width: 40%;
+            background: var(--mail-secondary);
+        }
+
+        .animated-mail .letter .letter-context {
+            margin-top: 4px;  /* Margin küçültüldü */
+            margin-left: 3px;  /* Margin küçültüldü */
+            height: 4px;  /* Yükseklik küçültüldü */
+            width: 20%;
+            background: var(--mail-secondary);
+        }
+
+        .animated-mail .letter .letter-stamp {
+            margin-top: 4px;  /* Margin küçültüldü */
+            margin-left: 25px;  /* Margin küçültüldü */
+            border-radius: 100%;
+            height: 8px;  /* Boyut küçültüldü */
+            width: 8px;  /* Boyut küçültüldü */
+            background: var(--mail-secondary);
+            opacity: 0.3;
+        }
+
+        .shadow {
+            position: absolute;
+            top: 40px;  /* Pozisyon ayarlandı */
+            left: 50%;
+            width: 50px;  /* Genişlik küçültüldü */
+            height: 5px;  /* Yükseklik küçültüldü */
+            transition: 0.4s;
+            transform: translateX(-50%);
+            border-radius: 100%;
+            background: radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
+            opacity: 0.5;
+        }
+
+        .letter-image:hover .animated-mail {
+            transform: translateY(10px);  /* Hover efekti küçültüldü */
+        }
+
+        .letter-image:hover .animated-mail .letter {
+            height: 60px;  /* Hover yüksekliği küçültüldü */
+        }
+
+        .letter-image:hover .shadow {
+            width: 60px;  /* Hover genişliği küçültüldü */
+        }
+
+        /* Mail kutusunun altındaki input - inline pozisyonlama */
+        .mail-submit-container {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .mail-submit-container input {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 3px 0 0 3px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: var(--light-color);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+        }
+
+        .mail-submit-container input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+
+        .mail-submit-container button {
+            background-color: transparent;
+            color: var(--light-color);
+            padding: 8px 12px;
+            border: none;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .footer-bottom {
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            display: none; /* Eski butonu gizle */
+        }
+
+        /* Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s;
+        }
+
+        .fade-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Notification Styles */
+        #notification-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2000;
+            pointer-events: none;
+        }
+
+        .notification {
+            height: 60px;
+            width: 300px;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            margin-bottom: 10px;
+            transform-origin: right;
+            animation: notify 3s ease-in-out;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes notify {
+            0% {transform: scaleX(0);}
+            10% {transform: scaleX(1);}
+            13% {transform: scale(1.05);}
+            16% {transform: scale(1);}
+            55% {transform: scaleX(1); border-radius: 4px;}
+            65% {transform: scaleX(0.25); border-radius: 50%;}
+            95% {transform: scaleX(0.25); border-radius: 50%;}
+            100% {transform: scaleX(0);}
+        }
+
+        .notification .content {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 0 15px;
+            animation: exit 3s ease-in-out;
+        }
+
+        @keyframes exit {
+            0% {opacity: 1;}
+            55% {opacity: 1;}
+            65% {opacity: 0;}
+            100% {opacity: 0;}
+        }
+
+        .notification .identifier {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .notification .text {
+            flex-grow: 1;
+        }
+
+        .notification.success .identifier {
+            background-color: #4CAF50;
+        }
+
+        .notification.error .identifier {
+            background-color: #F44336;
+        }
+
+        .notification.warning .identifier {
+            background-color: #FF9800;
+        }
+
+        .notification.info .identifier {
+            background-color: #2196F3;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav-list {
+                position: fixed;
+                top: 140px;
+                left: -100%;
+                width: 280px;
+                height: calc(100vh - 140px);
+                background-color: var(--light-color);
+                flex-direction: column;
+                gap: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s;
+                padding: 20px;
+                z-index: 2;
+            }
+
+            .nav-list.active {
+                left: 0;
+            }
+
+            .nav-list li {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .nav-list li:hover {
+                width: 90%;
+            }
+
+            .header.sticky {
+                transform: translateY(0);
+            }
+
+            .header-top {
+                display: none;
+            }
+
+            .hero-title-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero-title-static, .line-1 {
+                font-size: 40px;
+            }
+
+            .line-1 {
+                margin-left: 10px;
+                width: 24em;
+            }
+
+            .about-content, .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image::before {
+                display: none;
+            }
+
+            .links-grid-container {
+                flex-direction: column;
+            }
+
+            .links-column {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .hero-title-static, .line-1 {
+                font-size: 32px;
+            }
+
+            .line-1 {
+                height: 50px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .services-content {
+                grid-template-columns: 1fr;
+            }
+
+            .team-content {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            }
+
+            /* Responsive styles for the animated submit button */
+            .noselect {
+                width: 120px;
+                height: 40px;
+            }
+
+            .noselect span {
+                font-size: 14px;
+            }
+
+            .noselect:focus {
+                width: 40px;
+            }
+
+            /* Responsive styles for the animated mail */
+            .letter-image {
+                width: 120px;
+                height: 90px;
+            }
+
+            .animated-mail {
+                width: 100px;
+                height: 60px;
+            }
+
+            .animated-mail .body {
+                border-width: 0 0 50px 100px;
+            }
+
+            .animated-mail .top-fold {
+                top: 20px;
+                border-width: 25px 50px 0 50px;
+            }
+
+            .animated-mail .back-fold {
+                width: 100px;
+                height: 50px;
+            }
+
+            .animated-mail .left-fold {
+                border-width: 25px 0 25px 50px;
+            }
+
+            .animated-mail .letter {
+                left: 10px;
+                width: 80px;
+                height: 40px;
+            }
+
+            .shadow {
+                top: 65px;
+                width: 100px;
+            }
+
+            .mail-submit-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .mail-submit-container input {
+                border-radius: 3px;
+                margin-bottom: 10px;
+            }
+
+            .mail-submit-container button {
+                border-radius: 3px;
+            }
+
+            .links-grid-container {
+                flex-direction: column;
+            }
+
+            .links-column {
+                width: 100%;
+            }
+
+            .faq-question h3 {
+                font-size: 16px;
+            }
+        }
+
+        /* Back to Top Button */
+        .progress-wrap {
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+            display: block;
+            border-radius: 50px;
+            box-shadow: inset 0 0 0 2px rgba(0, 181, 245, 0.2);
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            -webkit-transition: all 200ms linear;
+            transition: all 200ms linear;
+            background: transparent;
+        }
+
+        .progress-wrap.active-progress {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .progress-wrap::after {
+            position: absolute;
+            font-family: 'FontAwesome';
+            content: '\f077';
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            color: var(--icon-color);
+            left: 0;
+            top: 0;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+            display: block;
+            z-index: 1;
+            -webkit-transition: all 200ms linear;
+            transition: all 200ms linear;
+        }
+
+        .progress-wrap:hover {
+            background: rgba(0, 181, 245, 0.1);
+            box-shadow: inset 0 0 0 2px rgba(0, 181, 245, 0.4);
+        }
+
+        .progress-wrap:hover::after {
+            color: var(--icon-color);
+        }
+
+        .progress-wrap svg path {
+            fill: none;
+        }
+
+        .progress-wrap svg.progress-circle path {
+            stroke: var(--secondary-color);
+            stroke-width: 4;
+            box-sizing: border-box;
+            -webkit-transition: all 200ms linear;
+            transition: all 200ms linear;
+        }
+
+        .hero-title-static {
+            font-size: 60px;
+            font-weight: 700;
+            color: var(--light-color);
+            margin: 0;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .hero-title-static span {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 992px) {
+            .hero-title-static {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title-static {
+                font-size: 32px;
+            }
+        }
+
+        /* Çerez Bildirimi CSS */
+        .cookie-consent-modal {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(42, 59, 76, 0.98);
+            color: #ffffff;
+            padding: 20px;
+            z-index: 9999;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .cookie-consent-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cookie-consent-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cookie-consent-text {
+            flex: 1;
+        }
+
+        .cookie-consent-text h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .cookie-consent-text p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .cookie-consent-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .cookie-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            white-space: nowrap;
+        }
+
+        .cookie-btn-accept-all {
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+
+        .cookie-btn-accept-all:hover {
+            background-color: #a55a5a;
+        }
+
+        .cookie-btn-settings {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        .cookie-btn-settings:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .cookie-btn-reject-all {
+            background-color: transparent;
+            color: var(--light-color);
+            text-decoration: underline;
+            padding: 17px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            transition: none;
+            letter-spacing: normal;
+        }
+
+        .cookie-btn-reject-all:hover {
+            text-decoration: underline;
+            background-color: transparent;
+            color: var(--light-color);
+            transform: none;
+            box-shadow: none;
+            letter-spacing: normal;
+        }
+
+        .cookie-btn-reject-all:active {
+            text-decoration: underline;
+            transform: none;
+            box-shadow: none;
+            letter-spacing: normal;
+        }
+
+        @media (max-width: 768px) {
+            .cookie-consent-main {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .cookie-consent-actions {
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 15px;
+            }
+
+            .cookie-btn {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+        }
+
+        /* Çerez Politikası Sayfası İçin Modal Stil */
+        .cookie-policy-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 10000;
+            overflow-y: auto;
+        }
+
+        .cookie-policy-content {
+            position: relative;
+            background-color: #fff;
+            margin: 50px auto;
+            padding: 30px;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            color: var(--primary-color);
+        }
+
+        .cookie-policy-content h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .cookie-policy-content h3 {
+            color: var(--primary-color);
+            margin: 20px 0 10px;
+        }
+
+        .cookie-policy-content p, .cookie-policy-content ul {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .cookie-policy-content ul {
+            padding-left: 20px;
+        }
+
+        .cookie-policy-content li {
+            margin-bottom: 5px;
+        }
+
+        .cookie-policy-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 24px;
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .cookie-policy-close:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Çerez Yönetim Düğmesi Stil */
+        .cookie-settings-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 9900;
+            transition: all 0.3s;
+        }
+
+        .cookie-settings-button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .cookie-settings-button.hidden {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+
+        /* Logo link stili */
+        .logo-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .logo-link:hover {
+            opacity: 0.9;
+        }
+
+        /* Mevcut logo stillerini güncelleme */
+        .logo {
+            display: block;
+        }
+
+        /* Yükleme Ekranı Stilleri */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100000;
+            flex-direction: column;
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+            overflow: hidden;
+            background: #4973ff;
+        }
+
+        .loading-screen .wave {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #4973ff;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+            transition: 0.5s;
+        }
+
+        .loading-screen .wave span {
+            content: "";
+            position: absolute;
+            width: 325vh;
+            height: 325vh;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            background: #000;
+        }
+
+        .loading-screen .wave span:nth-child(1) {
+            border-radius: 45%;
+            background: rgba(20, 20, 20, 1);
+            animation: animate 15s linear infinite;
+        }
+
+        .loading-screen .wave span:nth-child(2) {
+            border-radius: 40%;
+            background: rgba(20, 20, 20, 0.5);
+            animation: animate 30s linear infinite;
+        }
+
+        .loading-screen .wave span:nth-child(3) {
+            border-radius: 42.5%;
+            background: rgba(20, 20, 20, 0.5);
+            animation: animate 45s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translate(-50%, -75%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -75%) rotate(360deg);
+            }
+        }
+
+        .loading-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            margin-top: -80px; /* -20px'den -80px'e güncellendi */
+        }
+
+        .ataturk-quote {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 80px;
+            max-width: 800px;
+            text-align: center;
+            font-style: italic;
+            line-height: 1.8;
+            opacity: 0.9;
+            font-weight: 500;
+            position: relative;
+            top: -80px;
+        }
+
+        .cube {
+            margin: 0 auto;
+            font-size: 48px;
+            height: 1em;
+            width: 1em;
+            position: relative;
+            transform: rotatex(30deg) rotatey(45deg);
+            transform-style: preserve-3d;
+            animation: cube-spin 1.5s infinite ease-in-out alternate;
+            margin-bottom: 40px;
+            top: -80px; /* -20px'den -80px'e güncellendi */
+        }
+
+        .loading-text {
+            color: #fff;
+            font-size: 18px;
+            margin-top: 20px;
+            font-family: 'Poppins', sans-serif;
+            animation: fadeInOut 1.5s infinite ease-in-out;
+            position: relative;
+            top: -40px; /* Yükleniyor yazısı 40px yukarı taşındı */
+        }
+
+        @keyframes fadeInOut {
+            0% { opacity: 0.3; }
+            50% { opacity: 1; }
+            100% { opacity: 0.3; }
+        }
+
+        body.loading {
+            overflow: hidden;
+        }
+
+        .loading-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .cube {
+            margin: 0 auto;
+            font-size: 48px;
+            height: 1em;
+            width: 1em;
+            position: relative;
+            transform: rotatex(30deg) rotatey(45deg);
+            transform-style: preserve-3d;
+            animation: cube-spin 1.5s infinite ease-in-out alternate;
+        }
+
+        .side {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform-style: preserve-3d;
+        }
+
+        .side::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #F9DBBB;
+            transform: translatez(0.5em);
+            animation: cube-explode 1.5s infinite ease-in-out;
+            opacity: 0.7;
+        }
+
+        .side:nth-child(1) { transform: rotatey(90deg); }
+        .side:nth-child(2) { transform: rotatey(180deg); }
+        .side:nth-child(3) { transform: rotatey(270deg); }
+        .side:nth-child(4) { transform: rotatey(360deg); }
+        .side:nth-child(5) { transform: rotatex(90deg); }
+        .side:nth-child(6) { transform: rotatex(270deg); }
+
+        @keyframes cube-spin {
+            0% { transform: rotatex(30deg) rotatey(45deg); }
+            100% { transform: rotatex(30deg) rotatey(405deg); }
+        }
+
+        @keyframes cube-explode {
+            0% { transform: translatez(0.5em); }
+            50% { transform: translatez(0.75em); }
+            100% { transform: translatez(0.5em); }
+        }
+
+        /* Logo Silüeti Stili */
+        .background-logo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background-image: url('images/logo/favicon-black.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .cookie-toggle {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 26px;
+        }
+
+        .cookie-toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .cookie-toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .cookie-toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        .cookie-category input:checked + .cookie-toggle-slider {
+            background-color: var(--secondary-color);
+        }
+
+        .cookie-category input:disabled + .cookie-toggle-slider {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .cookie-category input:checked + .cookie-toggle-slider:before {
+            transform: translateX(24px);
+        }
+
+        /* Checkbox wrapper stillerini kaldır */
+        .checkbox-wrapper-30,
+        .checkbox-wrapper-30 .checkbox,
+        .checkbox-wrapper-30 .checkbox input,
+        .checkbox-wrapper-30 .checkbox svg {
+            display: none;
+        }
+
+        /* Service Modal Styles */
+        .service-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .service-modal-content {
+            position: relative;
+            background: var(--light-color);
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .service-modal.active .service-modal-content {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .service-modal-header {
+            background: var(--primary-color);
+            color: var(--light-color);
+            padding: 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        .service-modal-header h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .service-modal-close {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: var(--light-color);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .service-modal-close:hover {
+            color: var(--secondary-color);
+        }
+
+        .service-modal-body {
+            padding: 30px;
+        }
+
+        .service-modal-body h4 {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .service-modal-body p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .service-modal-body ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+
+        .service-modal-body ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .service-modal-body ul li:before {
+            content: "✓";
+            color: var(--secondary-color);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .service-modal-footer {
+            background: rgba(212, 185, 150, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service-modal-footer .btn {
+            margin: 0 10px;
+        }
+
+        .service-modal-footer .btn.btn-outline {
+            color: var(--dark-color);
+            border-color: var(--dark-color);
+        }
+
+        .service-modal-footer .btn.btn-outline:hover {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+        }
+
+        @media (max-width: 768px) {
+            .service-modal-content {
+                margin: 20px;
+            }
+        }
+
+        .service-modal-header {
+            background: var(--primary-color);
+            color: var(--light-color);
+            padding: 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        .service-modal-header h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--light-color);
+        }
+
+        .service-modal-close {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: var(--light-color);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .service-modal-close:hover {
+            color: var(--secondary-color);
+        }
+
+        .service-modal-footer .btn {
+            margin: 0 10px;
+            color: var(--dark-color);
+        }
+
+        .service-modal-footer .btn.btn-outline {
+            border-color: var(--light-color);
+            color: var(--dark-color);
+        }
+
+        .service-modal-footer .btn.btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            border-color: var(--primary-color);
+        }
+
+        /* Service Modal Styles */
+        .service-modal-footer .btn {
+            margin: 0 10px;
+            color: var(--dark-color) !important;
+        }
+
+        .service-modal-footer .btn:hover {
+            color: var(--light-color) !important;
+        }
+
+        .service-modal-footer .btn.btn-outline {
+            border: 2px solid var(--primary-color);
+            background: transparent;
+            color: var(--dark-color) !important;
+        }
+
+        .service-modal-footer .btn.btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--light-color) !important;
+            border-color: var(--primary-color);
+        }
+
+        /* Yeni Checkbox Stili */
+        .checkbox-wrapper-33 {
+            --s-xsmall: 0.625em;
+            --s-small: 1.2em;
+            --border-width: 1px;
+            --c-primary: var(--secondary-color);
+            --c-primary-20-percent-opacity: rgba(249, 219, 187, 0.2);
+            --c-primary-10-percent-opacity: rgba(249, 219, 187, 0.1);
+            --t-base: 0.4s;
+            --t-fast: 0.2s;
+            --e-in: ease-in;
+            --e-out: cubic-bezier(.11,.29,.18,.98);
+        }
+
+        .checkbox-wrapper-33 .visuallyhidden {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        .checkbox-wrapper-33 .checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .checkbox-wrapper-33 .checkbox + .checkbox {
+            margin-top: var(--s-small);
+        }
+
+        .checkbox-wrapper-33 .checkbox__symbol {
+            display: inline-block;
+            display: flex;
+            margin-right: calc(var(--s-small) * 0.7);
+            border: var(--border-width) solid var(--c-primary);
+            position: relative;
+            border-radius: 0.1em;
+            width: 1.5em;
+            height: 1.5em;
+            transition: box-shadow var(--t-base) var(--e-out), background-color var(--t-base);
+            box-shadow: 0 0 0 0 var(--c-primary-10-percent-opacity);
+        }
+
+        .checkbox-wrapper-33 .checkbox__symbol:after {
+            content: "";
+            position: absolute;
+            top: 0.5em;
+            left: 0.5em;
+            width: 0.25em;
+            height: 0.25em;
+            background-color: var(--c-primary-20-percent-opacity);
+            opacity: 0;
+            border-radius: 3em;
+            transform: scale(1);
+            transform-origin: 50% 50%;
+        }
+
+        .checkbox-wrapper-33 .checkbox .icon-checkbox {
+            width: 1em;
+            height: 1em;
+            margin: auto;
+            fill: none;
+            stroke-width: 3;
+            stroke: currentColor;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+            color: var(--c-primary);
+            display: inline-block;
+        }
+
+        .checkbox-wrapper-33 .checkbox .icon-checkbox path {
+            transition: stroke-dashoffset var(--t-fast) var(--e-in);
+            stroke-dasharray: 30px, 31px;
+            stroke-dashoffset: 31px;
+        }
+
+        .checkbox-wrapper-33 .checkbox__textwrapper {
+            display: none;
+        }
+
+        .checkbox-wrapper-33 .checkbox__trigger:checked + .checkbox__symbol:after {
+            animation: ripple-33 1.5s var(--e-out);
+        }
+
+        .checkbox-wrapper-33 .checkbox__trigger:checked + .checkbox__symbol .icon-checkbox path {
+            transition: stroke-dashoffset var(--t-base) var(--e-out);
+            stroke-dashoffset: 0px;
+        }
+
+        .checkbox-wrapper-33 .checkbox__trigger:focus + .checkbox__symbol {
+            box-shadow: 0 0 0 0.25em var(--c-primary-20-percent-opacity);
+        }
+
+        @keyframes ripple-33 {
+            from {
+                transform: scale(0);
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+                transform: scale(20);
+            }
+        }
+
+        /* Checkbox container stilleri */
+        .cookie-category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cookie-category {
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Cookie kategori stilleri */
+        .cookie-category {
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .cookie-category-header {
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            pointer-events: none;
+        }
+
+        .cookie-category-header h5 {
+            margin: 0;
+            font-size: 16px;
+            color: var(--light-color);
+            pointer-events: auto;
+        }
+
+        .cookie-category-details {
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            height: auto !important;
+            overflow: visible !important;
+            margin: 10px 0 !important;
+            transition: none !important;
+        }
+
+        .cookie-category-details p {
+            margin: 0;
+            color: var(--light-color);
+            opacity: 0.9;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .checkbox-wrapper-33 {
+            pointer-events: auto;
+            z-index: 1;
+            position: relative;
+        }
+
+        .cookie-settings {
+            display: none;
+        }
+
+        .checkbox-wrapper-33 .checkbox__trigger:disabled + .checkbox__symbol {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Mobil Navigasyon Stilleri */
+        :root {
+            --mobile-splash-bg-color: #4E6E81;  /* Koyu mavi-gri arka plan */
+            --mobile-text-color: #F5F5F5;      /* Beyaz tonlu metin */
+        }
+
+        /* Temel Ayarlar - Normal ekranlarda gizli */
+        .mobile-nav-container {
+            display: none;
+        }
+
+        /* Sadece mobil cihazlar için göster */
+        @media (max-width: 992px) {
+            .mobile-nav-container {
+                display: block;
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 2000;
+            }
+            
+            /* Ana gezinme düğmesini gizle - mobilde kullanılmayacak */
+            .nav-toggle {
+                display: none !important;
+            }
+        }
+
+        /* Hamburger Menu Düğmesi */
+        .mobile-nav__toggle {
+            display: inline-block;
+            position: fixed;
+            z-index: 2010;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            outline: 0;
+            right: 15px;
+            top: 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background-color .15s linear;
+        }
+
+        .mobile-nav__toggle:hover,
+        .mobile-nav__toggle:focus {
+            background-color: rgba(0,0,0,.5);
+        }
+
+        /* Menü Ana Yapısı */
+        .mobile-nav__menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2005;
+            visibility: hidden;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Menü Öğeleri Animasyonu */
+        .mobile-nav__item {
+            opacity: 0;
+            transition: all .3s cubic-bezier(0.000, 0.995, 0.990, 1.000) .3s;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav__item:nth-child(1) { transform: translateY(-40px); }
+        .mobile-nav__item:nth-child(2) { transform: translateY(-80px); }
+        .mobile-nav__item:nth-child(3) { transform: translateY(-120px); }
+        .mobile-nav__item:nth-child(4) { transform: translateY(-160px); }
+        .mobile-nav__item:nth-child(5) { transform: translateY(-200px); }
+        .mobile-nav__item:nth-child(6) { transform: translateY(-240px); }
+        .mobile-nav__item:nth-child(7) { transform: translateY(-280px); }
+
+        /* Menü Linkleri Stilleri */
+        .mobile-nav__link {
+            color: var(--mobile-text-color);
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 1.25rem;
+            text-decoration: none;
+            padding: 1rem;
+            font-family: 'Poppins', sans-serif;
+            margin: 10px 0;
+        }
+
+        .mobile-nav__link:hover,
+        .mobile-nav__link:focus {
+            outline: 0;
+            background-color: rgba(0,0,0,0.2);
+        }
+
+        /* SVG Menü İkonu */
+        .menuicon {
+            display: block;
+            cursor: pointer;
+            color: #4E6E81;
+            transform: rotate(0deg);
+            transition: .3s cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+        }
+
+        .menuicon__bar,
+        .menuicon__circle {
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 3;
+            stroke-linecap: round;
+        }
+
+        .menuicon__bar {
+            transform: rotate(0deg);
+            transform-origin: 50% 50%;
+            transition: transform .25s ease-in-out;
+        }
+
+        .menuicon__circle {
+            transition: stroke-dashoffset .3s linear .1s;
+            stroke-dashoffset: 144.51326206513048;
+            stroke-dasharray: 144.51326206513048;
+        }
+
+        /* Dairesel Splash Arka Plan */
+        .mobile-splash {
+            position: fixed;
+            top: 40px;
+            right: 40px;
+            width: 1px;
+            height: 1px;
+        }
+
+        .mobile-splash::after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            background-color: var(--mobile-splash-bg-color);
+            width: 284vmax;
+            height: 284vmax;
+            top: -142vmax;
+            left: -142vmax;
+            transform: scale(0);
+            transform-origin: 50% 50%;
+            transition: transform .5s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            will-change: transform;
+        }
+
+        /* Aktif Durum Stilleri */
+        .mobile-nav--open > .mobile-splash::after {
+            transform: scale(1);
+        }
+
+        .mobile-nav--open .menuicon {
+            color: white;
+            transform: rotate(180deg);
+        }
+
+        .mobile-nav--open .menuicon__circle {
+            stroke-dashoffset: 0;
+        }
+
+        .mobile-nav--open .menuicon__bar:nth-child(1),
+        .mobile-nav--open .menuicon__bar:nth-child(4) {
+            opacity: 0;
+        }
+
+        .mobile-nav--open .menuicon__bar:nth-child(2) {
+            transform: rotate(45deg);
+        }
+
+        .mobile-nav--open .menuicon__bar:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+
+        .mobile-nav--open .mobile-nav__menu {
+            visibility: visible;
+        }
+
+        .mobile-nav--open .mobile-nav__item {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Menü açıkken sayfa kaydırmayı engelle */
+        body.mobile-nav-active {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- Mobil Navigasyon -->
+    <div class="mobile-nav-container" id="mobileNavContainer">
+        <nav id="mobileNav" class="mobile-nav" role="navigation">
+            <!-- Ana Navigasyon Menüsü -->
+            <ul class="mobile-nav__menu" id="mobileMenu" tabindex="-1" aria-label="ana navigasyon" hidden>
+                <li class="mobile-nav__item"><a href="#home" class="mobile-nav__link">Ana Sayfa</a></li>
+                <li class="mobile-nav__item"><a href="#about" class="mobile-nav__link">Hakkımızda</a></li>
+                <li class="mobile-nav__item"><a href="#services" class="mobile-nav__link">Hizmetlerimiz</a></li>
+                <li class="mobile-nav__item"><a href="#team" class="mobile-nav__link">Ortaklarımız</a></li>
+                <li class="mobile-nav__item"><a href="#testimonials" class="mobile-nav__link">Referanslar</a></li>
+                <li class="mobile-nav__item"><a href="#faq" class="mobile-nav__link">SSS</a></li>
+                <li class="mobile-nav__item"><a href="#contact" class="mobile-nav__link">İletişim</a></li>
+            </ul>
+            
+            <!-- Menü Açma/Kapama Düğmesi -->
+            <a href="#mobileNav" class="mobile-nav__toggle" role="button" aria-expanded="false" aria-controls="mobileMenu">
+                <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <title>Menüyü Aç/Kapat</title>
+                    <g>
+                        <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+                        <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                        <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                        <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+                        <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+                    </g>
+                </svg>
+            </a>
+            
+            <!-- Animasyonlu Arka Plan Elementi -->
+            <div class="mobile-splash"></div>
+        </nav>
+    </div>
+
+    <!-- Logo Silüeti -->
+    <div class="background-logo"></div>
+    
+    <!-- Yükleme Ekranı -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="wave">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="loading-content">
+            <div class="ataturk-quote">
+                "Hukuk, devletin temelidir. Devletin temeli sağlam olursa hukuk da sağlam olur."
+                <div class="quote-author">Mustafa Kemal Atatürk</div>
+            </div>
+            <div class="cube">
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+            </div>
+        </div>
+    </div>
+
+<!-- Header -->
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top-content">
+                <div class="header-contact">
+                    <a href="tel:+905384434585"><i class="fa fa-phone"></i> +90 538 443 45 85</a>
+                    <a href="mailto:av.teomanizgioglu@gmail.com"><i class="fa fa-envelope"></i> av.teomanizgioglu@gmail.com</a>
+                </div>
+                <div class="header-social">
+                    <ul class="social-icons">
+                        <li><a href="https://www.instagram.com/av.teomanizgioglu/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://x.com/TeomanIzgioglu" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://tr.linkedin.com/in/teoman-izgioglu-2097ab175" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container">
+            <div class="header-main-content">
+                <div class="logo">
+                    <a href="#home" class="logo-link">
+                        <img src="images/logo/favicon-white.png" alt="İzgioğlu & Soydinç Logo" class="logo-white">
+                        <img src="images/logo/favicon-black.png" alt="İzgioğlu & Soydinç Logo" class="logo-black">
+                        <div class="title-container">
+                            <h1>İzgioğlu & Soydinç</h1>
+                            <h2>Avukatlık Bürosu</h2>
+                        </div>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <button class="nav-toggle" id="nav-toggle">☰</button>
+                    <ul class="nav-list" id="nav-list">
+                        <li style="--i:#a955ff;--j:#ea51ff" data-href="#home">
+                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                            <span class="title">Ana Sayfa</span>
+                        </li>
+                        <li style="--i:#56CCF2;--j:#2F80ED" data-href="#about">
+                            <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span>
+                            <span class="title">Hakkımızda</span>
+                        </li>
+                        <li style="--i:#FF9966;--j:#FF5E62" data-href="#services">
+                            <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+                            <span class="title">Hizmetlerimiz</span>
+                        </li>
+                        <li style="--i:#80FF72;--j:#7EE8FA" data-href="#team">
+                            <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                            <span class="title">Ortaklarımız</span>
+                        </li>
+                        <li style="--i:#ffa9c6;--j:#f434e2" data-href="#testimonials">
+                            <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
+                            <span class="title">Referanslar</span>
+                        </li>
+                        <li style="--i:#FF9966;--j:#FF5E62" data-href="#faq">
+                            <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                            <span class="title">SSS</span>
+                        </li>
+                        <li style="--i:#a955ff;--j:#ea51ff" data-href="#contact">
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                            <span class="title">İletişim</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h4 class="hero-subtitle">Hukuki Çözüm Ortağınız</h4>
+        <div class="hero-title-container">
+            <h1 class="hero-title-static"><span>Adalet</span></h1>
+            <p class="line-1 anim-typewriter"></p>
+        </div>
+        <p class="hero-text">Deneyimimizle tüm hukuki sorunlarınızda yanınızdayız. Müvekkillerimizin haklarını en iyi şekilde savunmak için buradayız.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn">Hukuki Danışmanlık</a>
+            <a href="#services" class="btn btn-outline">Hizmetlerimiz</a>
+        </div>
+    </div>
+    <div class="hero-shape">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,50 C150,100 350,0 500,50 C650,100 800,0 950,50 C1100,100 1300,0 1440,50 L1440,100 L0,100 Z"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>Hakkımızda</h2>
+            <p>Hukuk alanında kaliteli ve güvenilir hizmet sunmaktayız.</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image fade-up">
+                <img src="images/services/about-img.png" alt="Adalet Hukuk Bürosu">
+            </div>
+            <div class="about-text fade-up">
+                <h3>Hakkımızda</h3>
+                <p>Hukuk ofisimiz, Avukat Teoman İzgioğlu ve Avukat Mehmet Batuhan Soydinç ortaklığında kurulmuş olup, ağırlıklı olarak Adana ve İstanbul'da faaliyet göstermektedir.</p>
+                
+                <p>İzgioğlu & Soydinç Hukuk Danışmanlık, hukuki ihtilafların çözümü hususunda faaliyet göstermekte birlikte, şirketler başta olmak üzere kurum ve kuruluşlara hukuki görüş sunarak gerekli çalışmaları yapmaktadır.</p>
+                
+                <p>Güncel hukuki meseleleri yakından takip eden İzgioğlu & Soydinç Hukuk Danışmanlık; yargı mercileri tarafından verilen emsal kararları güncel olarak takip ederek çağdaş bakış açısı ile pozitif bilimler ışığında uygulamaya koymayı amaçlamaktadır.</p>
+                
+                <div class="about-features">
+                    <div class="about-feature">
+                        <div class="about-feature-icon">⚖️</div>
+                        <div>
+                            <h4>Uzman Kadro</h4>
+                            <p>Deneyimli hukuk ortakları</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-icon">🤝</div>
+                        <div>
+                            <h4>Profesyonel Çözümler</h4>
+                            <p>Her davaya özel yaklaşım</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-icon">🔍</div>
+                        <div>
+                            <h4>Güncel Takip</h4>
+                            <p>Emsal kararlar analizi</p>
+                        </div>
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-icon">⏱️</div>
+                        <div>
+                            <h4>Hızlı Sonuç</h4>
+                            <p>Etkin hukuki süreç</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact" class="btn" style="margin-top: 30px;">İletişime Geçin</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-title">
+            <h2>Hizmetlerimiz</h2>
+            <p>Tüm hukuki ihtiyaçlarınız için profesyonel çözümler sunuyoruz.</p>
+        </div>
+        <div class="services-content">
+            <div class="service-card fade-up" onclick="openServiceModal('aile')">
+                <div class="service-icon"><i class="fa fa-users"></i></div>
+                <div class="service-content">
+                    <h3>Aile Hukuku</h3>
+                    <p>Boşanma, velayet, nafaka, mal paylaşımı gibi aile hukuku alanındaki tüm konularda yanınızdayız.</p>
+                    <a href="#" class="service-details">Detaylı Bilgi <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card fade-up" onclick="openServiceModal('ticaret')">
+                <div class="service-icon"><i class="fa fa-building"></i></div>
+                <div class="service-content">
+                    <h3>Ticaret Hukuku</h3>
+                    <p>Şirket kurulumu, birleşme ve devralmalar, sözleşmeler ve ticari uyuşmazlıklar konusunda danışmanlık.</p>
+                    <a href="#" class="service-details">Detaylı Bilgi <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card fade-up" onclick="openServiceModal('gayrimenkul')">
+                <div class="service-icon"><i class="fa fa-home"></i></div>
+                <div class="service-content">
+                    <h3>Gayrimenkul Hukuku</h3>
+                    <p>Tapu, kat mülkiyeti, kira sözleşmeleri ve gayrimenkul kaynaklı uyuşmazlıklar için hukuki destek.</p>
+                    <a href="#" class="service-details">Detaylı Bilgi <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card fade-up" onclick="openServiceModal('is')">
+                <div class="service-icon"><i class="fa fa-briefcase"></i></div>
+                <div class="service-content">
+                    <h3>İş Hukuku</h3>
+                    <p>İşçi-işveren ilişkileri, iş sözleşmeleri, tazminat davaları ve çalışma hayatına dair hukuki konular.</p>
+                    <a href="#" class="service-details">Detaylı Bilgi <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card fade-up" onclick="openServiceModal('miras')">
+                <div class="service-icon"><i class="fa fa-file-text"></i></div>
+                <div class="service-content">
+                    <h3>Miras Hukuku</h3>
+                    <p>Vasiyetname hazırlanması, miras paylaşımı ve veraset ilamı işlemleri için profesyonel danışmanlık.</p>
+                    <a href="#" class="service-details">Detaylı Bilgi <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card fade-up" onclick="openServiceModal('ceza')">
+                <div class="service-icon"><i class="fa fa-balance-scale"></i></div>
+                <div class="service-content">
+                    <h3>Ceza Hukuku</h3>
+                    <p>Suç duyurusu, soruşturma ve kovuşturma aşamalarında hukuki temsil ve savunma hizmetleri.</p>
+                    <a href="#" class="service-details">Detaylı Bilgi <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Parallax Section -->
+<section class="parallax">
+    <div class="container">
+        <div class="parallax-content fade-up">
+            <h2>Profesyonel Hukuki Değerlendirme</h2>
+            <p>Hukuki sorunlarınızla ilgili ilk adımı atarken yanınızdayız. Profesyonel hukuki değerlendirme hizmetimiz için hemen iletişime geçin.</p>
+            <a href="#contact" class="btn btn-white">Randevu Al</a>
+        </div>
+    </div>
+</section>
+
+<!-- Partners Section -->
+<section class="team" id="team">
+    <div class="container">
+        <div class="section-title">
+            <h2>Ortaklarımız</h2>
+            <p>Hukuki ihtiyaçlarınızda iki ortak olarak sizlere hizmet vermekteyiz.</p>
+        </div>
+        <div class="team-content">
+            <div class="team-member fade-up" id="teoman-card">
+                <div class="team-member-image" style="background-image: url('images/team/teoman.jpeg'); background-position: center 32%; background-size: 70%;">
+                    <div class="team-member-overlay">
+                        <p>Ticaret hukuku ve şirketler hukuku alanlarında uzmanlaşmış olan Av. Teoman İzgioğlu, büromuzun kurucu ortağıdır.</p>
+                    </div>
+                </div>
+                <div class="team-member-content">
+                    <h3>Av. Teoman İzgioğlu</h3>
+                    <br>
+                    <span>Kurucu Ortak</span>
+                    <div class="team-social">
+                        <ul class="social-icons">
+                            <li><a href="https://www.instagram.com/av.teomanizgioglu/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://x.com/TeomanIzgioglu" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="https://tr.linkedin.com/in/teoman-izgioglu-2097ab175" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member fade-up" id="batuhan-card">
+                <div class="team-member-image" style="background-image: url('images/team/batuhan.png'); background-position: center 25%; background-size: 70%;">
+                    <div class="team-member-overlay">
+                        <p>Aile hukuku ve miras hukuku konularında uzmanlaşmış Av. Mehmet Batuhan Soydinç, büromuzun kurucu ortağıdır.</p>
+                    </div>
+                </div>
+                <div class="team-member-content">
+                    <h3>Av. Mehmet Batuhan Soydinç</h3>
+                    <span>Kurucu Ortak</span>
+                    <div class="team-social">
+                        <ul class="social-icons">
+                            <li><a href="https://www.instagram.com/av.batuhansoydinc/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/01batuhan" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/mehmet-batuhan-soydinc-56703822a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-title">
+            <h2>Müvekkil Yorumları</h2>
+            <p>Müvekkillerimizin değerli görüşleri bizim için çok önemli.</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="customers-testimonials" class="owl-carousel">
+                    <!--TESTIMONIAL 1 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <p>Boşanma davamda İzgioğlu & Soydinç Hukuk Bürosu'nun verdiği profesyonel destekten çok memnun kaldım. Süreç boyunca her aşamada bilgilendirildim ve haklarım en iyi şekilde korundu.</p>
+                        </div>
+                        <div class="testimonial-name">SELİN A.</div>
+                        <div class="testimonial-info">Mimar / Boşanma Davası</div>
+                    </div>
+                    <!--TESTIMONIAL 2 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <p>Şirketimizin hukuki danışmanlığını üstlenen İzgioğlu & Soydinç Hukuk Bürosu, tüm ticari süreçlerimizde stratejik yaklaşımlarıyla büyük değer katıyor.</p>
+                        </div>
+                        <div class="testimonial-name">EMRE Y.</div>
+                        <div class="testimonial-info">İşletme Sahibi / Ticari Danışmanlık</div>
+                    </div>
+                    <!--TESTIMONIAL 3 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <p>İş kazası sonrası yaşadığım zorlu süreçte İzgioğlu & Soydinç Hukuk Bürosu'nun desteği ve profesyonel yaklaşımı sayesinde haklarımı sonuna kadar arayabildim.</p>
+                        </div>
+                        <div class="testimonial-name">MURAT Ö.</div>
+                        <div class="testimonial-info">İnşaat İşçisi / İş Kazası Davası</div>
+                    </div>
+                    <!--TESTIMONIAL 4 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <p>Miras davamızda gösterdikleri titizlik ve profesyonellik için teşekkür ederiz. Süreç boyunca her aşamada yanımızda oldular.</p>
+                        </div>
+                        <div class="testimonial-name">AYŞE D.</div>
+                        <div class="testimonial-info">Emekli / Miras Davası</div>
+                    </div>
+                    <!--TESTIMONIAL 5 -->
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <p>Gayrimenkul davamızda gösterdikleri çaba ve profesyonel yaklaşımları için teşekkür ederiz. Sonuçtan çok memnunuz.</p>
+                        </div>
+                        <div class="testimonial-name">MEHMET K.</div>
+                        <div class="testimonial-info">Emlakçı / Gayrimenkul Davası</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Dış Bağlantılar Section -->
+<section class="links" id="links">
+    <div class="container">
+        <div class="section-title">
+            <h2>Hukuki Bilgi Kaynaklarına Erişim</h2>
+            <p>Hukuki araştırmalarınız için faydalı kaynaklar</p>
+        </div>
+        <div class="links-content">
+            <div class="links-grid-container">
+                <!-- Resmi Kurumlar -->
+                <div class="links-column">
+                    <h3 class="links-column-title">Resmi Kurumlar</h3>
+                    <div class="links-divider"></div>
+
+                    <a href="https://www.resmigazete.gov.tr/" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-gavel"></i>
+                        </div>
+                        <div class="link-text">T.C. Resmi Gazete</div>
+                    </a>
+
+                    <a href="https://www.mevzuat.gov.tr/" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-balance-scale"></i>
+                        </div>
+                        <div class="link-text">Mevzuat Bilgi Sistemi</div>
+                    </a>
+
+                    <a href="https://www.turkiye.gov.tr/" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-building"></i>
+                        </div>
+                        <div class="link-text">e-Devlet Kapısı</div>
+                    </a>
+
+                    <a href="https://www.adalet.gov.tr/" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-university"></i>
+                        </div>
+                        <div class="link-text">T.C. Adalet Bakanlığı</div>
+                    </a>
+                </div>
+
+                <!-- Hukuki Kaynaklar -->
+                <div class="links-column">
+                    <h3 class="links-column-title">Hukuki Kaynaklar</h3>
+                    <div class="links-divider"></div>
+
+                    <a href="https://www.gib.gov.tr/" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="link-text">Kazancı İçtihat Bilgi Bankası</div>
+                    </a>
+
+                    <a href="https://karararama.yargitay.gov.tr/" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-file-text"></i>
+                        </div>
+                        <div class="link-text">Yargıtay Karar Arama</div>
+                    </a>
+
+                    <a href="https://www.lexpera.com.tr/" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <div class="link-text">Lexpera Hukuk Bilgi Sistemi</div>
+                    </a>
+
+                    <a href="https://www.anayasa.gov.tr/" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-landmark"></i>
+                        </div>
+                        <div class="link-text">Anayasa Mahkemesi</div>
+                    </a>
+                </div>
+
+                <!-- Uluslararası Kaynaklar -->
+                <div class="links-column">
+                    <h3 class="links-column-title">Uluslararası Kaynaklar</h3>
+                    <div class="links-divider"></div>
+
+                    <a href="https://www.echr.coe.int/" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="link-text">Avrupa İnsan Hakları Mahkemesi</div>
+                    </a>
+
+                    <a href="https://curia.europa.eu/" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-euro-sign"></i>
+                        </div>
+                        <div class="link-text">Avrupa Birliği Adalet Divanı</div>
+                    </a>
+
+                    <a href="https://www.un.org/en/about-us/universal-declaration-of-human-rights" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <div class="link-text">İnsan Hakları Evrensel Beyannamesi</div>
+                    </a>
+
+                    <a href="https://www.wipo.int/" target="_blank" class="link-item">
+                        <div class="link-icon">
+                            <i class="fa fa-copyright"></i>
+                        </div>
+                        <div class="link-text">Dünya Fikri Mülkiyet Örgütü</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SSS Section -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-title">
+            <h2>Sıkça Sorulan Sorular</h2>
+            <p>Müvekkillerimizin en çok merak ettiği konulara yanıtlar.</p>
+        </div>
+        <div class="faq-content">
+            <div class="faq-accordion">
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>İlk görüşme ücretli midir?</h3>
+                        <span class="faq-icon"><i class="fa fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>İlk tanışma görüşmemiz 30 dakika ile sınırlı olmak üzere ücretsizdir. Bu görüşmede hukuki sorununuzun genel hatlarını değerlendirip, size nasıl yardımcı olabileceğimizi belirleriz. Detaylı hukuki danışmanlık ve süreç planlaması için ücretlendirme yapılmaktadır.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>Dava açma süreleri nelerdir?</h3>
+                        <span class="faq-icon"><i class="fa fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Dava açma süreleri, davanın türüne göre değişiklik göstermektedir:</p>
+                        <ul>
+                            <li>İş davalarında fesih tarihinden itibaren 1 ay</li>
+                            <li>İdari davalarda tebliğ tarihinden itibaren 60 gün</li>
+                            <li>Tüketici davalarında 3 yıl</li>
+                            <li>Kira ve tahliye davalarında 5 yıl</li>
+                            <li>Genel haksız fiil tazminat davalarında 2 yıl ve her halükarda 10 yıl</li>
+                        </ul>
+                        <p>Her hukuki durum kendine özgü özellikler taşıdığından, dava süreleri konusunda gecikmeden hukuki danışmanlık almanızı öneririz.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>Boşanma davası ne kadar sürer?</h3>
+                        <span class="faq-icon"><i class="fa fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Boşanma davalarının süresi birçok faktöre bağlıdır:</p>
+                        <ul>
+                            <li>Anlaşmalı boşanmalarda, eşlerin tüm konularda anlaşmış olması halinde, tek celsede (yaklaşık 1-3 ay içinde) sonuçlanabilir.</li>
+                            <li>Çekişmeli boşanma davalarında ise mal paylaşımı, velayet ve nafaka gibi konularda anlaşmazlıklar varsa, dava 1-2 yıl sürebilir.</li>
+                            <li>Mahkemelerin iş yoğunluğu ve tarafların tutumu da süreyi etkileyen faktörlerdir.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>Ücretlendirme politikanız nedir?</h3>
+                        <span class="faq-icon"><i class="fa fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ücretlendirme politikamız şu şekildedir:</p>
+                        <ul>
+                            <li>Sabit ücret: Bazı standart hukuki işlemler için (sözleşme hazırlama, ihtarname gönderme vb.) sabit ücret uygulanmaktadır.</li>
+                            <li>Saatlik ücret: Danışmanlık hizmetleri için genellikle saatlik ücretlendirme yapılmaktadır.</li>
+                            <li>Başarı primi: Bazı davalarda, dava sonucunda elde edilecek miktarın belirli bir yüzdesi olarak ücretlendirme yapılabilir.</li>
+                        </ul>
+                        <p>Her müvekkilimizin ihtiyacına göre ücretlendirme detaylarını ilk görüşmede netleştiriyoruz ve yazılı bir anlaşma yapıyoruz.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>Online hukuki danışmanlık hizmeti veriyor musunuz?</h3>
+                        <span class="faq-icon"><i class="fa fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, teknolojik gelişmelere uyum sağlayarak müvekkillerimize online hukuki danışmanlık hizmeti sunmaktayız. Zoom, Teams veya WhatsApp üzerinden görüntülü görüşme yapabilir, e-posta yoluyla belge alışverişinde bulunabilir ve uzaktan hukuki destek sağlayabiliriz. Bu hizmet özellikle şehir dışında veya yurtdışında yaşayan müvekkillerimiz için büyük kolaylık sağlamaktadır.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>Ticari davalar için gerekli belgeler nelerdir?</h3>
+                        <span class="faq-icon"><i class="fa fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ticari davalar için genellikle şu belgeler gereklidir:</p>
+                        <ul>
+                            <li>Ticaret sicil kayıtları ve faaliyet belgeleri</li>
+                            <li>İmza sirküleri ve vekaletnameler</li>
+                            <li>Sözleşmeler ve protokoller</li>
+                            <li>Faturalar, irsaliyeler ve ödeme belgeleri</li>
+                            <li>Yazışmalar ve e-posta kayıtları</li>
+                            <li>Defter kayıtları ve mali tablolar</li>
+                            <li>İhtarnameler ve noter kayıtları</li>
+                        </ul>
+                        <p>Davanın türüne göre gerekli belgeler değişebilir, bu nedenle ilk görüşmede ihtiyaç duyulan belgelerin tam listesini sizinle paylaşırız.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>Davanın kazanılmaması durumunda ücret iadesi yapıyor musunuz?</h3>
+                        <span class="faq-icon"><i class="fa fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Avukatlık hizmetimiz bir sonuç taahhüdü değil, emek ve mesai karşılığı olduğundan, davanın kazanılmaması durumunda ücret iadesi yapılmamaktadır. Ancak, vekalet ücretimizin bir kısmını başarı primi olarak belirlediğimiz durumlarda, bu kısım davanın kazanılmaması halinde talep edilmemektedir. Her dava başlangıcında müvekkillerimizi olasılıklar, riskler ve beklentiler konusunda şeffaf bir şekilde bilgilendiriyoruz.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>Avukatımı nasıl değiştirebilirim?</h3>
+                        <span class="faq-icon"><i class="fa fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Avukatınızı değiştirmek için aşağıdaki adımları izleyebilirsiniz:</p>
+                        <ol>
+                            <li>Mevcut vekaletnamenizi azilname ile iptal etmeniz gereklidir. Bu işlemi herhangi bir noterden yapabilirsiniz.</li>
+                            <li>Yeni avukatınız için yeni bir vekaletname çıkarmanız gerekir.</li>
+                            <li>Mevcut avukatınızla ücret ve dosya devri konularını netleştirmeniz önemlidir.</li>
+                            <li>Yeni avukatınızın dosyanızı incelemesi ve dava sürecine hakim olması için yeterli zamanı sağlamanız gerekir.</li>
+                        </ol>
+                        <p>Büromuz, müvekkil memnuniyetini ön planda tutarak, avukat değişikliği durumunda dosya devrini profesyonelce gerçekleştirmektedir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>İletişime Geçin</h2>
+            <p>Size en kısa sürede dönüş yapacağız.</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card fade-up">
+                    <div class="contact-card-icon"><i class="fa fa-map-marker"></i></div>
+                    <div class="contact-card-content">
+                        <h3>Adres</h3>
+                        <p>Çınarlı Mah. Fatih Terim Sk.<br>Aşiyan Apt No:15/9<br>Seyhan/Adana</p>
+                    </div>
+                </div>
+                <div class="contact-card fade-up">
+                    <div class="contact-card-icon"><i class="fa fa-phone"></i></div>
+                    <div class="contact-card-content">
+                        <h3>Telefon</h3>
+                        <p><a href="tel:+905384434585">+90 538 443 45 85</a></p>
+                    </div>
+                </div>
+                <div class="contact-card fade-up">
+                    <div class="contact-card-icon"><i class="fa fa-envelope"></i></div>
+                    <div class="contact-card-content">
+                        <h3>E-posta</h3>
+                        <p><a href="mailto:av.teomanizgioglu@gmail.com">av.teomanizgioglu@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-card fade-up">
+                    <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div class="contact-card-content">
+                        <h3>Çalışma Saatleri</h3>
+                        <p>Pazartesi – Cumartesi: 09:00 - 19:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form fade-up">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Adınız Soyadınız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-posta Adresiniz" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" placeholder="Telefon Numaranız">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" required>
+                            <option value="" disabled selected>Hizmet Seçiniz</option>
+                            <option value="aile">Aile Hukuku</option>
+                            <option value="ticaret">Ticaret Hukuku</option>
+                            <option value="gayrimenkul">Gayrimenkul Hukuku</option>
+                            <option value="is">İş Hukuku</option>
+                            <option value="miras">Miras Hukuku</option>
+                            <option value="ceza">Ceza Hukuku</option>
+                            <option value="diger">Diğer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Mesajınız" required></textarea>
+                    </div>
+                    <button type="submit" class="noselect">
+                        <span>Gönder</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map" id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.6428864910295!2d35.32016017655914!3d36.99445657219235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15288f2d19194921%3A0x873bc8f5e0e0bf7f!2zxLB6Z2lvxJ9sdSAmIFNveWRpbsOnIEh1a3VrIHZlIERhbsSxxZ9tYW5sxLFrIC0gQ2V6YSAtIEJvxZ9hbm1hIC0gVGljYXJldCAtIMSwY3JhIEF2dWthdMSx!5e0!3m2!1str!2str!4v1746699294918!5m2!1str!2str" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-widget footer-about">
+                    <h3>Hakkımızda</h3>
+                    <p>İzgioğlu & Soydinç Hukuk Bürosu, 1990 yılından bu yana müvekkillerine kaliteli hukuki hizmet sunmaktadır. İki ortak olarak her türlü hukuki sorununuzda yanınızdayız.</p>
+                    <div class="footer-social">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-widget footer-links">
+                    <h3>Hızlı Bağlantılar</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fa fa-chevron-right"></i> Ana Sayfa</a></li>
+                        <li><a href="#about"><i class="fa fa-chevron-right"></i> Hakkımızda</a></li>
+                        <li><a href="#services"><i class="fa fa-chevron-right"></i> Hizmetlerimiz</a></li>
+                        <li><a href="#team"><i class="fa fa-chevron-right"></i> Ortaklarımız</a></li>
+                        <li><a href="#testimonials"><i class="fa fa-chevron-right"></i> Referanslar</a></li>
+                        <li><a href="#links"><i class="fa fa-chevron-right"></i> Hukuki Kaynaklar</a></li>
+                        <li><a href="#faq"><i class="fa fa-chevron-right"></i> SSS</a></li>
+                        <li><a href="#contact"><i class="fa fa-chevron-right"></i> İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget footer-links">
+                    <h3>Hizmetlerimiz</h3>
+                    <ul>
+                        <li><a href="javascript:void(0)" onclick="openServiceModal('aile')"><i class="fa fa-chevron-right"></i> Aile Hukuku</a></li>
+                        <li><a href="javascript:void(0)" onclick="openServiceModal('ticaret')"><i class="fa fa-chevron-right"></i> Ticaret Hukuku</a></li>
+                        <li><a href="javascript:void(0)" onclick="openServiceModal('gayrimenkul')"><i class="fa fa-chevron-right"></i> Gayrimenkul Hukuku</a></li>
+                        <li><a href="javascript:void(0)" onclick="openServiceModal('is')"><i class="fa fa-chevron-right"></i> İş Hukuku</a></li>
+                        <li><a href="javascript:void(0)" onclick="openServiceModal('miras')"><i class="fa fa-chevron-right"></i> Miras Hukuku</a></li>
+                        <li><a href="javascript:void(0)" onclick="openServiceModal('ceza')"><i class="fa fa-chevron-right"></i> Ceza Hukuku</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget footer-newsletter">
+                    <h3>Bültenimize Abone Olun</h3>
+                    <p>Hukuki gelişmelerden ve büromuzdan haberleri almak için bültenimize abone olun.</p>
+
+                    <!-- Abone ol formu yerine animasyonlu mail -->
+                    <div class="mail-submit-container">
+                        <input type="email" placeholder="E-posta Adresiniz" required id="newsletter-email">
+
+                        <!-- Abone ol butonu yerine animasyonlu mail -->
+                        <button type="button" id="newsletter-submit">
+                            <div class="letter-image">
+                                <div class="animated-mail">
+                                    <div class="back-fold"></div>
+                                    <div class="letter">
+                                        <div class="letter-border"></div>
+                                        <div class="letter-title"></div>
+                                        <div class="letter-context"></div>
+                                        <div class="letter-stamp">
+                                            <div class="letter-stamp-inner"></div>
+                                        </div>
+                                    </div>
+                                    <div class="top-fold"></div>
+                                    <div class="body"></div>
+                                    <div class="left-fold"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2025 İzgioğlu & Soydinç Hukuk Bürosu. Tüm Hakları Saklıdır.</p>
+        </div>
+    </div>
+</footer>
+<!-- Back to Top Button -->
+<div class="back-to-top" id="back-to-top" style="display: none;"><i class="fa fa-arrow-up"></i></div>
+
+<!-- Notification Container -->
+<div id="notification-container"></div>
+
+<!-- Back to Top Button -->
+<div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+</div>
+
+<!-- Çerez Bildirimi HTML -->
+<div class="cookie-consent-modal" id="cookieConsentModal">
+    <div class="cookie-consent-container">
+        <div class="cookie-consent-main">
+            <div class="cookie-consent-text">
+                <h3>Çerez Kullanımı</h3>
+                <p>İzgioğlu & Soydinç Hukuk Bürosu olarak web sitemizde çerezler kullanıyoruz. Çerezler, web sitemizin daha iyi çalışmasını sağlamak, kullanımınızı analiz etmek ve deneyiminizi kişiselleştirmek için kullanılmaktadır.</p>
+                <p>Ayrıntılı bilgi için <a href="#" class="cookie-policy-link" id="openCookiePolicy">Çerez Politikası</a> sayfamızı inceleyebilirsiniz.</p>
+            </div>
+            <div class="cookie-consent-actions">
+                <button class="cookie-btn cookie-btn-accept-all" id="acceptAllCookies">Tümünü Kabul Et</button>
+                <button class="cookie-btn cookie-btn-settings" id="openCookieSettings">Ayarlar</button>
+                <button class="cookie-btn cookie-btn-reject-all" id="rejectAllCookies">Reddet</button>
+            </div>
+        </div>
+        <div class="cookie-settings" id="cookieSettings">
+            <h4>Çerez Tercihleri</h4>
+            <div class="cookie-category">
+                <div class="cookie-category-header" data-category="necessary">
+                    <h5>Zorunlu Çerezler</h5>
+                    <div class="checkbox-wrapper-33">
+                        <label class="checkbox">
+                            <input class="checkbox__trigger visuallyhidden" type="checkbox" checked disabled />
+                            <span class="checkbox__symbol">
+                                <svg aria-hidden="true" class="icon-checkbox" width="28px" height="28px" viewBox="0 0 28 28" version="1" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 14l8 7L24 7"></path>
+                                </svg>
+                            </span>
+                            <p class="checkbox__textwrapper">Aktif</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="cookie-category-details">
+                    <p>Bu çerezler, web sitesinin temel işlevlerini yerine getirmesi için gereklidir ve devre dışı bırakılamazlar. Genellikle yalnızca sizin eylemlerinizin bir sonucu olarak ayarlanırlar, bu da hizmet talepleri, gizlilik tercihlerinizi ayarlama, oturum açma veya form doldurma gibi eylemlerdir.</p>
+                </div>
+            </div>
+
+            <div class="cookie-category">
+                <div class="cookie-category-header" data-category="analytics">
+                    <h5>Analitik Çerezler</h5>
+                    <div class="checkbox-wrapper-33">
+                        <label class="checkbox">
+                            <input class="checkbox__trigger visuallyhidden" type="checkbox" id="analyticsCookies" />
+                            <span class="checkbox__symbol">
+                                <svg aria-hidden="true" class="icon-checkbox" width="28px" height="28px" viewBox="0 0 28 28" version="1" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 14l8 7L24 7"></path>
+                                </svg>
+                            </span>
+                            <p class="checkbox__textwrapper">İzin Ver</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="cookie-category-details">
+                    <p>Bu çerezler, ziyaretçilerin web sitemizi nasıl kullandığına dair bilgi toplamamıza yardımcı olur. Hangi sayfaların en popüler olduğunu, hangilerinin en az popüler olduğunu ve ziyaretçilerin sitede nasıl gezindiğini anlamamızı sağlar. Tüm bilgiler anonim olarak toplanır ve doğrudan sizi tanımlamak için kullanılamaz.</p>
+                </div>
+            </div>
+
+            <div class="cookie-category">
+                <div class="cookie-category-header" data-category="marketing">
+                    <h5>Pazarlama Çerezleri</h5>
+                    <div class="checkbox-wrapper-33">
+                        <label class="checkbox">
+                            <input class="checkbox__trigger visuallyhidden" type="checkbox" id="marketingCookies" />
+                            <span class="checkbox__symbol">
+                                <svg aria-hidden="true" class="icon-checkbox" width="28px" height="28px" viewBox="0 0 28 28" version="1" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 14l8 7L24 7"></path>
+                                </svg>
+                            </span>
+                            <p class="checkbox__textwrapper">İzin Ver</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="cookie-category-details">
+                    <p>Bu çerezler, size kişiselleştirilmiş reklamlar göstermek için kullanılır.</p>
+                </div>
+            </div>
+
+            <div class="cookie-category">
+                <div class="cookie-category-header" data-category="preferences">
+                    <h5>Tercih Çerezleri</h5>
+                    <div class="checkbox-wrapper-33">
+                        <label class="checkbox">
+                            <input class="checkbox__trigger visuallyhidden" type="checkbox" id="preferencesCookies" />
+                            <span class="checkbox__symbol">
+                                <svg aria-hidden="true" class="icon-checkbox" width="28px" height="28px" viewBox="0 0 28 28" version="1" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 14l8 7L24 7"></path>
+                                </svg>
+                            </span>
+                            <p class="checkbox__textwrapper">İzin Ver</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="cookie-category-details">
+                    <p>Bu çerezler, web sitesindeki tercihlerinizi kaydetmemize olanak tanır.</p>
+                </div>
+            </div>
+            <div style="margin-top: 20px; text-align: right;">
+                <button class="cookie-btn cookie-btn-save" id="saveCookieSettings">Tercihleri Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Çerez Politikası Modal -->
+<div class="cookie-policy-modal" id="cookiePolicyModal">
+    <div class="cookie-policy-content">
+        <span class="cookie-policy-close" id="closeCookiePolicy">&times;</span>
+        <h2>Çerez Politikası</h2>
+
+        <p>İzgioğlu & Soydinç Hukuk Bürosu olarak, sitemizi ziyaret edenlerin deneyimini iyileştirmek ve hizmetlerimizi geliştirmek için çerezler kullanmaktayız. Bu politika, hangi çerezlerin kullanıldığını, bunların nasıl kontrol edilebileceğini ve haklarınızı açıklamaktadır.</p>
+
+        <h3>Çerez Nedir?</h3>
+        <p>Çerezler, ziyaret ettiğiniz web siteleri tarafından bilgisayarınıza, telefonunuza veya tabletinize kaydedilen küçük metin dosyalarıdır. Web sitelerinin sizi tanımasını ve daha iyi bir kullanıcı deneyimi sunmasını sağlarlar.</p>
+
+        <h3>Hangi Tür Çerezleri Kullanıyoruz?</h3>
+        <p>Web sitemizde kullandığımız çerezler şu kategorilere ayrılır:</p>
+
+        <p><strong>1. Zorunlu Çerezler:</strong> Bu çerezler, web sitesinin temel işlevlerini yerine getirmesi için gereklidir ve devre dışı bırakılamazlar. Genellikle yalnızca sizin eylemlerinizin bir sonucu olarak ayarlanırlar, bu da hizmet talepleri, gizlilik tercihlerinizi ayarlama, oturum açma veya form doldurma gibi eylemlerdir.</p>
+
+        <p><strong>2. Analitik Çerezler:</strong> Bu çerezler, ziyaretçilerin web sitemizi nasıl kullandığına dair bilgi toplamamıza yardımcı olur. Hangi sayfaların en popüler olduğunu, hangilerinin en az popüler olduğunu ve ziyaretçilerin sitede nasıl gezindiğini anlamamızı sağlar. Tüm bilgiler anonim olarak toplanır ve doğrudan sizi tanımlamak için kullanılamaz.</p>
+
+        <p><strong>3. Pazarlama Çerezleri:</strong> Bu çerezler, web sitemizi ziyaret ettiğinizde davranışlarınızı takip ederek, ilgi alanlarınıza yönelik reklamlar gösterilmesini sağlar. Bu çerezler, reklam ağları tarafından bilgi toplamak ve size kişiselleştirilmiş reklamlar göstermek için kullanılır.</p>
+
+        <p><strong>4. Tercih Çerezleri:</strong> Bu çerezler, tercihlerinizi kaydetmemize ve web sitemizde dil veya bölge seçimi gibi özelleştirme işlevlerini sunmamıza olanak tanır. Bu çerezlerin engellenmesi, bu özelleştirmelerin çalışmamasına neden olabilir.</p>
+
+        <h3>Çerezleri Nasıl Kontrol Edebilirsiniz?</h3>
+        <p>Web sitemizi ilk ziyaretinizde çerez tercihlerinizi ayarlayabilirsiniz. Ayrıca, tarayıcınızın ayarlarını değiştirerek çerezleri kontrol edebilir veya engelleyebilirsiniz. Lütfen unutmayın ki, çerezleri engellemek, web sitemizin bazı özelliklerinin düzgün çalışmamasına neden olabilir.</p>
+
+        <p>Tarayıcınızda çerezleri nasıl kontrol edeceğinize dair bilgi edinmek için tarayıcınızın yardım sayfasını ziyaret edebilirsiniz:</p>
+        <ul>
+            <li><a href="https://support.google.com/chrome/answer/95647?hl=tr" target="_blank">Google Chrome</a></li>
+            <li><a href="https://support.mozilla.org/tr/kb/cerezler-web-sitelerinin-bilgisayarinizda-depoladi" target="_blank">Mozilla Firefox</a></li>
+            <li><a href="https://support.microsoft.com/tr-tr/microsoft-edge/microsoft-edge-de-tanımlama-bilgilerini-silme-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank">Microsoft Edge</a></li>
+            <li><a href="https://support.apple.com/tr-tr/guide/safari/sfri11471/mac" target="_blank">Safari</a></li>
+        </ul>
+
+        <h3>Veri Koruma Haklarınız</h3>
+        <p>Kişisel verilerinizle ilgili haklarınız şunlardır:</p>
+        <ul>
+            <li>Verilerinize erişim talep etme</li>
+            <li>Verilerinizin düzeltilmesini veya silinmesini isteme</li>
+            <li>Verilerinizin işlenmesini sınırlandırma</li>
+            <li>Verilerinizin taşınmasını talep etme</li>
+            <li>Verilerin işlenmesine itiraz etme</li>
+        </ul>
+
+        <p>Kişisel verilerinizle ilgili herhangi bir sorunuz veya talebiniz varsa, lütfen <a href="mailto:info@adalethukuk.com">info@adalethukuk.com</a> adresinden bize ulaşın.</p>
+
+        <h3>Politika Değişiklikleri</h3>
+        <p>Çerez politikamızı zaman zaman güncelleyebiliriz. Önemli değişiklikler olması durumunda, web sitemizde bir bildirim yayınlayacağız. Bu politika en son 8 Mayıs 2025 tarihinde güncellenmiştir.</p>
+    </div>
+</div>
+
+<!-- Çerez Yönetim Düğmesi -->
+<button class="cookie-settings-button hidden" id="cookieSettingsButton">
+    <i class="fa fa-cookie-bite"></i>
+</button>
+
+<!-- Service Modals -->
+<div id="aileHukukuModal" class="service-modal">
+    <div class="service-modal-content">
+        <div class="service-modal-header">
+            <h3>Aile Hukuku</h3>
+            <span class="service-modal-close" onclick="closeServiceModal('aile')">&times;</span>
+        </div>
+        <div class="service-modal-body">
+            <h4>Aile Hukuku Hizmetlerimiz</h4>
+            <p>İzgioğlu & Soydinç Hukuk Bürosu olarak, aile hukuku alanında geniş deneyime sahip uzman kadromuzla yanınızdayız. Hassas aile meselelerinde, hukuki haklarınızı korumak ve en uygun çözümü bulmak için çalışıyoruz.</p>
+            
+            <h4>Sunduğumuz Hizmetler</h4>
+            <ul>
+                <li>Anlaşmalı ve Çekişmeli Boşanma Davaları</li>
+                <li>Nafaka (İştirak ve Yoksulluk) Davaları</li>
+                <li>Velayet ve Kişisel İlişki Tesisi</li>
+                <li>Mal Rejimi ve Mal Paylaşımı</li>
+                <li>Nişanın Bozulması Davaları</li>
+                <li>Maddi ve Manevi Tazminat Davaları</li>
+                <li>Aile Konutu Şerhi İşlemleri</li>
+                <li>Aile Arabuluculuğu</li>
+            </ul>
+
+            <h4>Çalışma Prensibimiz</h4>
+            <p>Her ailenin kendine özgü dinamikleri olduğunun bilincindeyiz. Bu nedenle, her vakayı özenle değerlendiriyor ve size özel çözümler sunuyoruz. Süreç boyunca:</p>
+            <ul>
+                <li>Gizlilik ilkesine sıkı sıkıya bağlı kalıyoruz</li>
+                <li>Şeffaf ve düzenli bilgilendirme yapıyoruz</li>
+                <li>Uzlaşmacı yaklaşımı önceliklendiriyoruz</li>
+                <li>Çocukların üstün yararını gözetiyoruz</li>
+            </ul>
+        </div>
+        <div class="service-modal-footer">
+            <a href="#contact" class="btn" onclick="closeServiceModal('aile')">İletişime Geçin</a>
+            <button class="btn btn-outline" onclick="closeServiceModal('aile')">Kapat</button>
+        </div>
+    </div>
+</div>
+
+<!-- Ticaret Hukuku Modal -->
+<div id="ticaretHukukuModal" class="service-modal">
+    <div class="service-modal-content">
+        <div class="service-modal-header">
+            <h3>Ticaret Hukuku</h3>
+            <span class="service-modal-close" onclick="closeServiceModal('ticaret')">&times;</span>
+        </div>
+        <div class="service-modal-body">
+            <h4>Ticaret Hukuku Hizmetlerimiz</h4>
+            <p>İzgioğlu & Soydinç Hukuk Bürosu olarak, ticari hayatın karmaşık yapısını anlıyor ve işletmelerin ihtiyaçlarına özel çözümler sunuyoruz.</p>
+            
+            <h4>Sunduğumuz Hizmetler</h4>
+            <ul>
+                <li>Şirket Kuruluşu ve Tasfiyesi</li>
+                <li>Birleşme ve Devralmalar</li>
+                <li>Ticari Sözleşmeler</li>
+                <li>Fikri Mülkiyet Hakları</li>
+                <li>Rekabet Hukuku Danışmanlığı</li>
+                <li>Ticari Uyuşmazlık Çözümleri</li>
+                <li>İcra ve İflas Hukuku</li>
+                <li>Ticari Arabuluculuk</li>
+            </ul>
+
+            <h4>Yaklaşımımız</h4>
+            <p>Modern iş dünyasının dinamik yapısına uygun, proaktif ve çözüm odaklı bir yaklaşım benimsiyoruz:</p>
+            <ul>
+                <li>Risk analizi ve önleyici hukuki danışmanlık</li>
+                <li>Sektörel uzmanlık ve güncel mevzuat takibi</li>
+                <li>Stratejik iş ortaklığı anlayışı</li>
+                <li>Uluslararası ticaret hukuku deneyimi</li>
+            </ul>
+        </div>
+        <div class="service-modal-footer">
+            <a href="#contact" class="btn" onclick="closeServiceModal('ticaret')">İletişime Geçin</a>
+            <button class="btn btn-outline" onclick="closeServiceModal('ticaret')">Kapat</button>
+        </div>
+    </div>
+</div>
+
+<!-- Gayrimenkul Hukuku Modal -->
+<div id="gayrimenkulHukukuModal" class="service-modal">
+    <div class="service-modal-content">
+        <div class="service-modal-header">
+            <h3>Gayrimenkul Hukuku</h3>
+            <span class="service-modal-close" onclick="closeServiceModal('gayrimenkul')">&times;</span>
+        </div>
+        <div class="service-modal-body">
+            <h4>Gayrimenkul Hukuku Hizmetlerimiz</h4>
+            <p>Gayrimenkul alım-satım, kiralama ve uyuşmazlık süreçlerinde profesyonel hukuki danışmanlık hizmeti sunuyoruz.</p>
+            
+            <h4>Sunduğumuz Hizmetler</h4>
+            <ul>
+                <li>Gayrimenkul Alım-Satım Sözleşmeleri</li>
+                <li>Kira Sözleşmeleri ve Uyuşmazlıkları</li>
+                <li>Kat Mülkiyeti Hukuku</li>
+                <li>İmar Hukuku Danışmanlığı</li>
+                <li>Tapu İptal ve Tescil Davaları</li>
+                <li>Kamulaştırma Davaları</li>
+                <li>İnşaat Hukuku</li>
+                <li>Gayrimenkul Yatırım Danışmanlığı</li>
+            </ul>
+
+            <h4>Uzmanlık Alanlarımız</h4>
+            <p>Gayrimenkul hukukunun tüm alanlarında kapsamlı hizmet veriyoruz:</p>
+            <ul>
+                <li>Kentsel dönüşüm projeleri</li>
+                <li>Ticari gayrimenkul işlemleri</li>
+                <li>Yabancıların gayrimenkul edinimi</li>
+                <li>Site ve plaza yönetimi danışmanlığı</li>
+            </ul>
+        </div>
+        <div class="service-modal-footer">
+            <a href="#contact" class="btn" onclick="closeServiceModal('gayrimenkul')">İletişime Geçin</a>
+            <button class="btn btn-outline" onclick="closeServiceModal('gayrimenkul')">Kapat</button>
+        </div>
+    </div>
+</div>
+
+<!-- İş Hukuku Modal -->
+<div id="isHukukuModal" class="service-modal">
+    <div class="service-modal-content">
+        <div class="service-modal-header">
+            <h3>İş Hukuku</h3>
+            <span class="service-modal-close" onclick="closeServiceModal('is')">&times;</span>
+        </div>
+        <div class="service-modal-body">
+            <h4>İş Hukuku Hizmetlerimiz</h4>
+            <p>İşçi ve işveren ilişkilerinde dengeli ve adil çözümler üreterek, çalışma hayatının hukuki güvencesini sağlıyoruz.</p>
+            
+            <h4>Sunduğumuz Hizmetler</h4>
+            <ul>
+                <li>İş Sözleşmeleri Hazırlanması</li>
+                <li>İşe İade Davaları</li>
+                <li>Kıdem ve İhbar Tazminatı</li>
+                <li>İş Kazası Davaları</li>
+                <li>Toplu İş Hukuku</li>
+                <li>Sosyal Güvenlik Hukuku</li>
+                <li>İş Sağlığı ve Güvenliği</li>
+                <li>İş Hukuku Arabuluculuğu</li>
+            </ul>
+
+            <h4>Danışmanlık Hizmetlerimiz</h4>
+            <p>İşletmelere ve çalışanlara kapsamlı danışmanlık hizmeti sunuyoruz:</p>
+            <ul>
+                <li>İş hukuku uyum denetimleri</li>
+                <li>İnsan kaynakları politikaları</li>
+                <li>Çalışma izinleri ve prosedürleri</li>
+                <li>Yeniden yapılandırma süreçleri</li>
+            </ul>
+        </div>
+        <div class="service-modal-footer">
+            <a href="#contact" class="btn" onclick="closeServiceModal('is')">İletişime Geçin</a>
+            <button class="btn btn-outline" onclick="closeServiceModal('is')">Kapat</button>
+        </div>
+    </div>
+</div>
+
+<!-- Miras Hukuku Modal -->
+<div id="mirasHukukuModal" class="service-modal">
+    <div class="service-modal-content">
+        <div class="service-modal-header">
+            <h3>Miras Hukuku</h3>
+            <span class="service-modal-close" onclick="closeServiceModal('miras')">&times;</span>
+        </div>
+        <div class="service-modal-body">
+            <h4>Miras Hukuku Hizmetlerimiz</h4>
+            <p>Miras hukukunun hassas doğasının bilincinde olarak, mirasçıların haklarını korumak ve adil paylaşımı sağlamak için çalışıyoruz.</p>
+            
+            <h4>Sunduğumuz Hizmetler</h4>
+            <ul>
+                <li>Vasiyetname Hazırlanması</li>
+                <li>Miras Paylaşımı</li>
+                <li>Veraset İlamı İşlemleri</li>
+                <li>Tenkis Davaları</li>
+                <li>Miras Sözleşmeleri</li>
+                <li>Mirasta İstihkak Davaları</li>
+                <li>Tereke Tespit İşlemleri</li>
+                <li>Miras Hukuku Arabuluculuğu</li>
+            </ul>
+
+            <h4>Özel Hizmetlerimiz</h4>
+            <p>Miras planlaması ve yönetimi konusunda özel danışmanlık:</p>
+            <ul>
+                <li>Aile şirketlerinde miras planlaması</li>
+                <li>Yurtdışı varlıkların mirası</li>
+                <li>Vakıf ve bağış işlemleri</li>
+                <li>Miras vergisi danışmanlığı</li>
+            </ul>
+        </div>
+        <div class="service-modal-footer">
+            <a href="#contact" class="btn" onclick="closeServiceModal('miras')">İletişime Geçin</a>
+            <button class="btn btn-outline" onclick="closeServiceModal('miras')">Kapat</button>
+        </div>
+    </div>
+</div>
+
+<!-- Ceza Hukuku Modal -->
+<div id="cezaHukukuModal" class="service-modal">
+    <div class="service-modal-content">
+        <div class="service-modal-header">
+            <h3>Ceza Hukuku</h3>
+            <span class="service-modal-close" onclick="closeServiceModal('ceza')">&times;</span>
+        </div>
+        <div class="service-modal-body">
+            <h4>Ceza Hukuku Hizmetlerimiz</h4>
+            <p>Ceza hukukunun her alanında profesyonel savunma ve danışmanlık hizmeti sunuyoruz. Müvekkillerimizin haklarını en etkin şekilde korumak için çalışıyoruz.</p>
+            
+            <h4>Sunduğumuz Hizmetler</h4>
+            <ul>
+                <li>Soruşturma Aşaması Savunma</li>
+                <li>Kovuşturma Aşaması Savunma</li>
+                <li>Suç Duyurusu ve Şikayet</li>
+                <li>Uzlaştırma Süreçleri</li>
+                <li>Temyiz ve İstinaf Başvuruları</li>
+                <li>Ceza İnfaz Hukuku</li>
+                <li>Adli Sicil Kayıtları</li>
+                <li>Önleyici Hukuki Danışmanlık</li>
+            </ul>
+
+            <h4>Uzmanlık Alanlarımız</h4>
+            <p>Ceza hukukunun tüm alanlarında deneyimli kadromuzla hizmet veriyoruz:</p>
+            <ul>
+                <li>Ekonomik ve mali suçlar</li>
+                <li>Bilişim suçları</li>
+                <li>Kişilere karşı suçlar</li>
+                <li>Uyuşturucu suçları</li>
+            </ul>
+        </div>
+        <div class="service-modal-footer">
+            <a href="#contact" class="btn" onclick="closeServiceModal('ceza')">İletişime Geçin</a>
+            <button class="btn btn-outline" onclick="closeServiceModal('ceza')">Kapat</button>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    // Mobile Menu Toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navList = document.getElementById('nav-list');
+
+    navToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+
+    // Sticky Header
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    });
+
+    // Testimonial Slider
+    jQuery(document).ready(function($) {
+        "use strict";
+        //  TESTIMONIALS CAROUSEL HOOK
+        $('#customers-testimonials').owlCarousel({
+            loop: true,
+            center: true,
+            items: 3,
+            margin: 0,
+            autoplay: true,
+            dots: true,
+            autoplayTimeout: 8500,
+            smartSpeed: 450,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1170: {
+                    items: 3
+                }
+            }
+        });
+    });
+
+    // Scroll Animation
+    const fadeElements = document.querySelectorAll('.fade-up');
+    function checkScroll() {
+        fadeElements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (elementPosition < windowHeight - 50) {
+                element.classList.add('show');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('load', checkScroll);
+
+    // Back to Top Button
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('active');
+        } else {
+            backToTop.classList.remove('active');
+        }
+    });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Smooth Scrolling for Anchor Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                navList.classList.remove('active');
+
+                window.scrollTo({
+                    top: targetSection.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Navigation Menu Items Click
+    document.querySelectorAll('.nav-list li').forEach(item => {
+        item.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-href');
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                navList.classList.remove('active');
+
+                window.scrollTo({
+                    top: targetSection.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Notification System
+    function showNotification(message, type = 'info') {
+        const container = document.getElementById('notification-container');
+
+        // Create notification element
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+
+        // Create content
+        const content = document.createElement('div');
+        content.className = 'content';
+
+        // Create identifier (icon)
+        const identifier = document.createElement('div');
+        identifier.className = 'identifier';
+
+        // Add icon based on type
+        let icon = '';
+        switch(type) {
+            case 'success':
+                icon = '✓';
+                break;
+            case 'error':
+                icon = '✕';
+                break;
+            case 'warning':
+                icon = '!';
+                break;
+            default:
+                icon = 'i';
+        }
+        identifier.textContent = icon;
+
+        // Create text
+        const text = document.createElement('div');
+        text.className = 'text';
+        text.textContent = message;
+
+        // Assemble notification
+        content.appendChild(identifier);
+        content.appendChild(text);
+        notification.appendChild(content);
+
+        // Add to container
+        container.appendChild(notification);
+
+        // Remove after animation completes
+        setTimeout(() => {
+            notification.remove();
+        }, 3000);
+    }
+    // Form Submission Rate Limiting
+    function canSubmitForm(emailOrPhone) {
+        // Get stored submissions from localStorage
+        const submissions = JSON.parse(localStorage.getItem('formSubmissions')) || {};
+
+        // Check if this email/phone has a submission record
+        if (submissions[emailOrPhone]) {
+            const lastSubmission = new Date(submissions[emailOrPhone]);
+            const now = new Date();
+
+            // Calculate time difference in minutes
+            const timeDiff = (now - lastSubmission) / (1000 * 60);
+
+            // If less than 30 minutes have passed, prevent submission
+            if (timeDiff < 30) {
+                const remainingMinutes = Math.ceil(30 - timeDiff);
+                showNotification(`Lütfen ${remainingMinutes} dakika sonra tekrar deneyiniz.`, 'warning');
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    function recordSubmission(emailOrPhone) {
+        // Get stored submissions from localStorage
+        const submissions = JSON.parse(localStorage.getItem('formSubmissions')) || {};
+
+        // Record current time for this email/phone
+        submissions[emailOrPhone] = new Date().toISOString();
+
+        // Save back to localStorage
+        localStorage.setItem('formSubmissions', JSON.stringify(submissions));
+    }
+
+    // Contact Form Validation and Submit Button Animation
+    const contactForm = document.querySelector('.contact-form form');
+    const submitButton = contactForm.querySelector('.noselect');
+    let isAnimating = false;
+    let isMouseDown = false;
+
+    // Handle mousedown/mouseup to prevent press-and-hold behavior
+    submitButton.addEventListener('mousedown', function() {
+        isMouseDown = true;
+    });
+
+    submitButton.addEventListener('mouseup', function() {
+        isMouseDown = false;
+    });
+
+    // Reset mousedown state if mouse leaves the button
+    submitButton.addEventListener('mouseleave', function() {
+        isMouseDown = false;
+    });
+
+    contactForm.addEventListener('submit', function(e) {
+        // Prevent default form submission
+        e.preventDefault();
+
+        // If animation is already running or button is being held down, don't proceed
+        if (isAnimating || isMouseDown) {
+            return;
+        }
+
+        // Check if all required fields are filled
+        const requiredFields = contactForm.querySelectorAll('[required]');
+        let isValid = true;
+
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                isValid = false;
+                field.classList.add('error');
+
+                // Remove error class when user starts typing
+                field.addEventListener('input', function() {
+                    this.classList.remove('error');
+                }, { once: true });
+            }
+        });
+
+        // If form is not valid, don't proceed
+        if (!isValid) {
+            showNotification('Lütfen tüm zorunlu alanları doldurunuz.', 'error');
+            return;
+        }
+
+        // Get email and phone values
+        const emailField = contactForm.querySelector('input[type="email"]');
+        const phoneField = contactForm.querySelector('input[type="tel"]');
+
+        // Use email as primary identifier, fall back to phone if email is empty
+        const emailValue = emailField.value.trim();
+        const phoneValue = phoneField.value.trim();
+
+        // If both email and phone are empty, show error
+        if (!emailValue && !phoneValue) {
+            showNotification('Lütfen e-posta veya telefon numarası giriniz.', 'error');
+            return;
+        }
+
+        // Use email as identifier, or phone if email is empty
+        const identifier = emailValue || phoneValue;
+
+        // Check if user can submit form based on previous submissions
+        if (!canSubmitForm(identifier)) {
+            return; // canSubmitForm already shows notification
+        }
+
+        // Set animating flag to true
+        isAnimating = true;
+
+        // Add animating class to trigger animation
+        submitButton.classList.add('animating');
+
+        // Reset the animating flag and remove class after animation completes (2.8s total)
+        setTimeout(() => {
+            isAnimating = false;
+            submitButton.classList.remove('animating');
+
+            // Record this submission
+            recordSubmission(identifier);
+
+            // Show success notification
+            showNotification('Mesajınız başarıyla gönderildi.', 'success');
+
+            // Here you would normally submit the form
+            // For demo purposes, we'll just log a message
+            console.log('Form submitted successfully!');
+
+            // Reset the form after successful submission
+            contactForm.reset();
+        }, 2800);
+    });
+
+    // Newsletter Form Submission - update for the new layout
+    const newsletterSubmit = document.getElementById('newsletter-submit');
+    const newsletterEmail = document.getElementById('newsletter-email');
+
+    newsletterSubmit.addEventListener('click', function() {
+        const emailValue = newsletterEmail.value.trim();
+
+        if (!emailValue) {
+            showNotification('Lütfen e-posta adresinizi giriniz.', 'error');
+            return;
+        }
+
+        // E-posta formatı kontrolü
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailValue)) {
+            showNotification('Lütfen geçerli bir e-posta adresi giriniz.', 'error');
+            return;
+        }
+
+        // Check submission rate limiting
+        if (!canSubmitForm(emailValue)) {
+            return;
+        }
+
+        // Animasyon efekti
+        const mailImage = this.querySelector('.letter-image');
+        mailImage.style.pointerEvents = 'none';
+
+        // 1 saniye sonra animasyonu bitir ve bildirim göster
+        setTimeout(() => {
+            // Record submission
+            recordSubmission(emailValue);
+
+            // Show success notification
+            showNotification('Bültenimize başarıyla abone oldunuz.', 'success');
+
+            // Reset input
+            newsletterEmail.value = '';
+
+            // Reset animation
+            mailImage.style.pointerEvents = 'auto';
+        }, 1000);
+    });
+
+    // Mail animasyonunu kontrol eden fonksiyon
+    function checkMailAnimation() {
+        const emailInput = document.getElementById('newsletter-email');
+        const mailButton = document.getElementById('newsletter-submit');
+        const letterImage = mailButton.querySelector('.letter-image');
+
+        emailInput.addEventListener('input', function() {
+            if (this.value.trim() === '') {
+                letterImage.style.pointerEvents = 'none';
+                letterImage.style.opacity = '0.5';
+            } else {
+                letterImage.style.pointerEvents = 'auto';
+                letterImage.style.opacity = '1';
+            }
+        });
+    }
+
+    // Sayfa yüklendiğinde mail animasyon kontrolünü başlat
+    window.addEventListener('load', checkMailAnimation);
+
+    // Back to Top Button with Progress
+    $(document).ready(function() {
+        var progressPath = document.querySelector('.progress-wrap path');
+        var pathLength = progressPath.getTotalLength();
+
+        progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+        progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+        progressPath.style.strokeDashoffset = pathLength;
+        progressPath.getBoundingClientRect();
+        progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+
+        var updateProgress = function() {
+            var scroll = $(window).scrollTop();
+            var height = $(document).height() - $(window).height();
+            var progress = pathLength - (scroll * pathLength / height);
+            progressPath.style.strokeDashoffset = progress;
+        }
+
+        updateProgress();
+        $(window).scroll(updateProgress);
+
+        var offset = 50;
+        var duration = 550;
+
+        jQuery(window).on('scroll', function() {
+            if(jQuery(this).scrollTop() > offset) {
+                jQuery('.progress-wrap').addClass('active-progress');
+            } else {
+                jQuery('.progress-wrap').removeClass('active-progress');
+            }
+        });
+
+        jQuery('.progress-wrap').on('click', function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+        });
+    });
+
+    // SSS Accordion Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    });
+
+    function openServiceModal(service) {
+        const modal = document.getElementById(service + 'HukukuModal');
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => {
+            modal.classList.add('active');
+        }, 10);
+    }
+
+    function closeServiceModal(service) {
+        const modal = document.getElementById(service + 'HukukuModal');
+        modal.classList.remove('active');
+        setTimeout(() => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 300);
+    }
+
+    // Modalın dışına tıklandığında kapanması için
+    window.onclick = function(event) {
+        if (event.target.classList.contains('service-modal')) {
+            const service = event.target.id.replace('HukukuModal', '');
+            closeServiceModal(service);
+        }
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const texts = [
+            "Eşitlik",
+            "Tarafsızlık",
+            "Hukukun Gücü",
+            "Güven ve Şeffaflık",
+            "Hakların Koruyucusu",
+            "Vicdanla Yargı",
+            "Adil Temsil",
+            "Doğruyu Savunmak",
+            "Güçlü Savunma",
+            "İnsan Onuru",
+            "Hak ve Hukuk",
+            "Etik İlkeler",
+            "Gerçek Adalet",
+            "Yasal Çözüm",
+            "İlkeli Yaklaşım"
+        ];
+
+        let currentIndex = 0;
+        const typewriterElement = document.querySelector('.anim-typewriter');
+
+        function typeWriter(text, element, speed = 100) {
+            let i = 0;
+            element.style.width = '0';
+            element.textContent = text;
+
+            function type() {
+                if (i < text.length) {
+                    element.style.width = (i + 1) + 'ch';
+                    i++;
+                    setTimeout(type, speed);
+                } else {
+                    setTimeout(erase, 1000); // Yazma tamamlandıktan 1 saniye sonra silmeye başla
+                }
+            }
+
+            function erase() {
+                if (i > 0) {
+                    element.style.width = (i - 1) + 'ch';
+                    i--;
+                    setTimeout(erase, speed);
+                } else {
+                    currentIndex = (currentIndex + 1) % texts.length;
+                    setTimeout(() => typeWriter(texts[currentIndex], element, speed), 500); // Silme tamamlandıktan 0.5 saniye sonra yeni kelimeye başla
+                }
+            }
+
+            type();
+        }
+
+        // İlk kelimeyi yazmaya başla
+        typeWriter(texts[currentIndex], typewriterElement);
+    });
+</script>
+
+<!-- Çerez Yönetim JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // DOM Elementleri
+        const cookieConsentModal = document.getElementById('cookieConsentModal');
+        const cookieSettings = document.getElementById('cookieSettings');
+        const cookiePolicyModal = document.getElementById('cookiePolicyModal');
+        const cookieSettingsButton = document.getElementById('cookieSettingsButton');
+        const cookieCategoryHeaders = document.querySelectorAll('.cookie-category-header');
+
+        // Butonlar
+        const acceptAllCookiesBtn = document.getElementById('acceptAllCookies');
+        const rejectAllCookiesBtn = document.getElementById('rejectAllCookies');
+        const openCookieSettingsBtn = document.getElementById('openCookieSettings');
+        const saveCookieSettingsBtn = document.getElementById('saveCookieSettings');
+        const openCookiePolicyBtn = document.getElementById('openCookiePolicy');
+        const closeCookiePolicyBtn = document.getElementById('closeCookiePolicy');
+
+        // Çerez kategori checkboxları
+        const analyticsCookiesCheckbox = document.getElementById('analyticsCookies');
+        const marketingCookiesCheckbox = document.getElementById('marketingCookies');
+        const preferencesCookiesCheckbox = document.getElementById('preferencesCookies');
+
+            // Çerez kategorileri açılıp kapanması için event listener
+        // Çerez kategorileri açılıp kapanması için event listener
+        cookieCategoryHeaders.forEach(header => {
+            header.addEventListener('click', function(e) {
+                // Toggle butonuna tıklanmadıysa detayları aç/kapa
+                if (!e.target.closest('.cookie-toggle')) {
+                    const details = this.nextElementSibling;
+                    details.style.display = details.style.display === 'block' ? 'none' : 'block';
+                }
+            });
+        });
+
+        // Çerez ayarları panelini aç/kapa
+        openCookieSettingsBtn.addEventListener('click', function() {
+            cookieSettings.style.display = cookieSettings.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Çerez tercihlerini kaydet
+        saveCookieSettingsBtn.addEventListener('click', function() {
+            saveCookiePreferences({
+                necessary: true, // Her zaman aktif
+                analytics: analyticsCookiesCheckbox.checked,
+                marketing: marketingCookiesCheckbox.checked,
+                preferences: preferencesCookiesCheckbox.checked
+            });
+            cookieConsentModal.style.display = 'none';
+            cookieSettingsButton.classList.remove('hidden');
+        });
+
+        // Tüm çerezleri kabul et
+        acceptAllCookiesBtn.addEventListener('click', function() {
+            saveCookiePreferences({
+                necessary: true,
+                analytics: true,
+                marketing: true,
+                preferences: true
+            });
+            cookieConsentModal.style.display = 'none';
+            cookieSettingsButton.classList.remove('hidden');
+        });
+
+        // Tüm çerezleri reddet
+        rejectAllCookiesBtn.addEventListener('click', function() {
+            saveCookiePreferences({
+                necessary: true, // Zorunlu çerezler her zaman aktif
+                analytics: false,
+                marketing: false,
+                preferences: false
+            });
+            cookieConsentModal.style.display = 'none';
+            cookieSettingsButton.classList.remove('hidden');
+        });
+
+        // Çerez ayarları butonuna tıklandığında
+        cookieSettingsButton.addEventListener('click', function() {
+            // Mevcut çerez tercihlerini yükle
+            loadCookiePreferences();
+            cookieSettings.style.display = 'none'; // Ayarlar kısmını kapalı başlat
+            cookieConsentModal.style.display = 'block';
+        });
+
+        // Çerez politikasını aç
+        openCookiePolicyBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            cookiePolicyModal.style.display = 'block';
+        });
+
+        // Çerez politikasını kapat
+        closeCookiePolicyBtn.addEventListener('click', function() {
+            cookiePolicyModal.style.display = 'none';
+        });
+
+        // Çerez politikası modali dışına tıklandığında kapat
+        cookiePolicyModal.addEventListener('click', function(e) {
+            if (e.target === cookiePolicyModal) {
+                cookiePolicyModal.style.display = 'none';
+            }
+        });
+
+        // Çerez tercihlerini kaydetme fonksiyonu
+        function saveCookiePreferences(preferences) {
+            localStorage.setItem('cookiePreferences', JSON.stringify(preferences));
+            localStorage.setItem('cookieConsentTimestamp', new Date().getTime());
+
+            // Çerez tercihlerine göre fonksiyonları çağır
+            if (preferences.analytics) {
+                enableAnalyticsCookies();
+            } else {
+                disableAnalyticsCookies();
+            }
+
+            if (preferences.marketing) {
+                enableMarketingCookies();
+            } else {
+                disableMarketingCookies();
+            }
+
+            if (preferences.preferences) {
+                enablePreferenceCookies();
+            } else {
+                disablePreferenceCookies();
+            }
+        }
+
+        // Çerez tercihlerini yükleme fonksiyonu
+        function loadCookiePreferences() {
+            const preferences = JSON.parse(localStorage.getItem('cookiePreferences'));
+            if (preferences) {
+                analyticsCookiesCheckbox.checked = preferences.analytics;
+                marketingCookiesCheckbox.checked = preferences.marketing;
+                preferencesCookiesCheckbox.checked = preferences.preferences;
+            }
+        }
+
+        // Çerez tipine göre fonksiyonlar
+        function enableAnalyticsCookies() {
+            // Google Analytics veya diğer analitik araçları etkinleştir
+            console.log('Analitik çerezler etkinleştirildi');
+        }
+
+        function disableAnalyticsCookies() {
+            // Google Analytics veya diğer analitik araçlarını devre dışı bırak
+            console.log('Analitik çerezler devre dışı bırakıldı');
+        }
+
+        function enableMarketingCookies() {
+            // Pazarlama çerezlerini etkinleştir
+            console.log('Pazarlama çerezleri etkinleştirildi');
+        }
+
+        function disableMarketingCookies() {
+// Pazarlama çerezlerini devre dışı bırak
+            console.log('Pazarlama çerezleri devre dışı bırakıldı');
+        }
+
+        function enablePreferenceCookies() {
+            // Tercih çerezlerini etkinleştir
+            console.log('Tercih çerezleri etkinleştirildi');
+        }
+
+        function disablePreferenceCookies() {
+            // Tercih çerezlerini devre dışı bırak
+            console.log('Tercih çerezleri devre dışı bırakıldı');
+        }
+
+        // Sayfa yüklendiğinde çerez onayını kontrol et
+        function checkCookieConsent() {
+            const consentTimestamp = localStorage.getItem('cookieConsentTimestamp');
+            const preferences = localStorage.getItem('cookiePreferences');
+
+            // Eğer daha önce çerez tercihi yapılmadıysa veya 6 ay geçtiyse
+            const sixMonthsInMs = 6 * 30 * 24 * 60 * 60 * 1000;
+            const currentTime = new Date().getTime();
+
+            if (!consentTimestamp || !preferences || (currentTime - consentTimestamp) > sixMonthsInMs) {
+                cookieConsentModal.style.display = 'block';
+                cookieSettingsButton.classList.add('hidden');
+            } else {
+                // Tercihleri yükle ve çerez düğmesini göster
+                loadCookiePreferences();
+                cookieSettingsButton.classList.remove('hidden');
+            }
+        }
+
+        // Sayfa yüklendiğinde çerez kontrolü yap
+        checkCookieConsent();
+    });
+
+    // Yükleme ekranı kontrolü
+    document.body.classList.add('loading');
+    
+    window.addEventListener('load', function() {
+        const loadingScreen = document.getElementById('loadingScreen');
+        setTimeout(function() {
+            loadingScreen.classList.add('hidden');
+            document.body.classList.remove('loading');
+            setTimeout(function() {
+                loadingScreen.style.display = 'none';
+            }, 500);
+        }, 1500);
+    });
+</script>
+    <!-- Mobil Navigasyon JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gerekli elemanları seçme
+            const mobileNav = document.querySelector('#mobileNav');
+            const mobileMenu = document.querySelector('#mobileMenu');
+            const menuToggle = document.querySelector('.mobile-nav__toggle');
+            let isMenuOpen = false;
+            
+            // MENÜ AÇMA/KAPAMA DURUMU
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    isMenuOpen = !isMenuOpen;
+                    
+                    // Erişilebilirlik niteliklerini ve active sınıfını değiştir
+                    menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
+                    mobileMenu.hidden = !isMenuOpen;
+                    mobileNav.classList.toggle('mobile-nav--open');
+                    
+                    // Sayfa kaydırmayı engelle/serbest bırak
+                    document.body.classList.toggle('mobile-nav-active');
+                });
+            }
+            
+            // MENÜ ÖĞELERİNE TIKLANDIĞINDA MENÜYÜ KAPAT
+            const menuLinks = document.querySelectorAll('.mobile-nav__link');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Menüyü kapat
+                    isMenuOpen = false;
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    mobileMenu.hidden = true;
+                    mobileNav.classList.remove('mobile-nav--open');
+                    document.body.classList.remove('mobile-nav-active');
+                    
+                    // Sayfa kaydırmayı serbest bırak
+                    document.body.classList.remove('mobile-nav-active');
+                    
+                    // Eğer hash link varsa, hedefe doğru kaydır
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        setTimeout(() => {
+                            window.scrollTo({
+                                top: targetSection.offsetTop - 100,
+                                behavior: 'smooth'
+                            });
+                        }, 300); // Menü kapanması için biraz bekle
+                    }
+                });
+            });
+            
+            // TAB TUŞUNU MENÜ İÇERİSİNDE YAKALA
+            mobileNav.addEventListener('keydown', function(e) {
+                // Menü açık değilse veya modifikatör tuşları basılıysa iptal et
+                if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
+                    return;
+                }
+                
+                // TAB tuşuna basıldığında ve odağı kontrol et
+                if (e.keyCode === 9) {
+                    if (e.shiftKey) {
+                        if (document.activeElement === menuLinks[0]) {
+                            menuToggle.focus();
+                            e.preventDefault();
+                        }
+                    } else if (document.activeElement === menuToggle) {
+                        menuLinks[0].focus();
+                        e.preventDefault();
+                    }
+                }
+                
+                // ESC tuşuna basıldığında menüyü kapat
+                if (e.keyCode === 27) {
+                    isMenuOpen = false;
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    mobileMenu.hidden = true;
+                    mobileNav.classList.remove('mobile-nav--open');
+                    document.body.classList.remove('mobile-nav-active');
+                    menuToggle.focus();
+                }
+            });
+            
+            // Ekran genişliğine göre mobil menü görünürlüğünü ayarla
+            function handleResize() {
+                const mobileNavContainer = document.getElementById('mobileNavContainer');
+                
+                if (window.innerWidth <= 992) {
+                    mobileNavContainer.style.display = 'block';
+                } else {
+                    // Menü açıksa kapat
+                    if (isMenuOpen) {
+                        isMenuOpen = false;
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        mobileMenu.hidden = true;
+                        mobileNav.classList.remove('mobile-nav--open');
+                        document.body.classList.remove('mobile-nav-active');
+                    }
+                    mobileNavContainer.style.display = 'none';
+                }
+            }
+            
+            // İlk yükleme ve ekran boyutu değiştiğinde kontrol et
+            handleResize();
+            window.addEventListener('resize', handleResize);
+        });
+    </script>
+</body>
+</html>
