@@ -22,20 +22,6 @@ Bu proje, İzgioğlu & Soydinç Hukuk Bürosu'nun kurumsal web sitesinin kaynak 
 - Owl Carousel
 - Ion Icons
 
-## Kurulum
-
-1. Repoyu klonlayın:
-```bash
-git clone https://github.com/kullaniciadi/izgioglusoydinc.git
-```
-
-2. Proje dizinine gidin:
-```bash
-cd izgioglusoydinc
-```
-
-3. index.html dosyasını bir web tarayıcısında açın.
-
 ## Geliştirme
 
 Projeyi geliştirmek için:
@@ -49,9 +35,3 @@ Projeyi geliştirmek için:
 ## Lisans
 
 Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır.
-
-## İletişim
-
-- Website: [izgioglusoydinc.com.tr](https://izgioglusoydinc.com.tr)
-- E-posta: av.teomanizgioglu@gmail.com
-- Telefon: +90 538 443 45 85 
