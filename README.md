@@ -22,16 +22,6 @@ Bu proje, İzgioğlu & Soydinç Hukuk Bürosu'nun kurumsal web sitesinin kaynak 
 - Owl Carousel
 - Ion Icons
 
-## Geliştirme
-
-Projeyi geliştirmek için:
-
-1. Bu repoyu forklayın
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeniOzellik`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik: Açıklama'`)
-4. Branch'inizi push edin (`git push origin feature/yeniOzellik`)
-5. Pull Request oluşturun
-
 ## Lisans
 
 Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır.
