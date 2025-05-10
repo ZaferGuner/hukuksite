@@ -4780,6 +4780,257 @@
                 font-size: 9px !important;
             }
         }
+
+        @media (max-width: 446px) and (min-width: 401px) {
+            .logo img {
+                width: 60px !important;
+                height: 60px !important;
+            }
+            .logo h1 {
+                font-size: 20px !important;
+            }
+            .logo h2 {
+                font-size: 13px !important;
+            }
+        }
+
+        /* 770px altı için footer bülten mail animasyonu ve input hizalama */
+        @media (max-width: 770px) {
+          .footer-newsletter .mail-submit-container {
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+            gap: 8px !important;
+            margin-top: 10px !important;
+            width: 100% !important;
+          }
+          .footer-newsletter .mail-submit-container input[type="email"] {
+            width: 60% !important;
+            min-width: 0 !important;
+            max-width: 220px !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding: 7px 8px !important;
+            font-size: 13px !important;
+          }
+          .footer-newsletter .mail-submit-container button {
+            padding: 0 !important;
+            margin: 0 !important;
+            background: none !important;
+            border: none !important;
+            min-width: 0 !important;
+            width: auto !important;
+            height: auto !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+          }
+          .footer-newsletter .letter-image {
+            width: 80px !important;
+            height: 70px !important;
+            min-width: 80px !important;
+            min-height: 70px !important;
+          }
+          .footer-newsletter .animated-mail {
+            width: 70px !important;
+            height: 50px !important;
+          }
+          .footer-newsletter .animated-mail .body {
+            border-width: 0 0 40px 70px !important;
+          }
+          .footer-newsletter .animated-mail .top-fold {
+            top: 20px !important;
+            border-width: 20px 35px 0 35px !important;
+          }
+          .footer-newsletter .animated-mail .back-fold {
+            width: 70px !important;
+            height: 40px !important;
+          }
+          .footer-newsletter .animated-mail .left-fold {
+            border-width: 20px 0 20px 35px !important;
+          }
+          .footer-newsletter .animated-mail .letter {
+            left: 10px !important;
+            bottom: 0 !important;
+            width: 50px !important;
+            height: 28px !important;
+            background: rgba(255,255,255,0.9);
+            z-index: 1;
+            overflow: hidden;
+            transition: 0.4s 0.2s;
+            border-radius: 2px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: block;
+          }
+          .footer-newsletter .animated-mail .letter .letter-border {
+            height: 4px !important;
+            width: 100% !important;
+            background: repeating-linear-gradient(-45deg, #4E6E81, #4E6E81 3px, transparent 3px, transparent 6px);
+          }
+          .footer-newsletter .animated-mail .letter .letter-title {
+            margin-top: 4px !important;
+            margin-left: 4px !important;
+            height: 4px !important;
+            width: 40% !important;
+            background: #4E6E81;
+            border-radius: 1px;
+          }
+          .footer-newsletter .animated-mail .letter .letter-context {
+            margin-top: 4px !important;
+            margin-left: 4px !important;
+            height: 4px !important;
+            width: 20% !important;
+            background: #4E6E81;
+            border-radius: 1px;
+          }
+          .footer-newsletter .animated-mail .letter .letter-stamp {
+            margin-top: 4px !important;
+            margin-left: 34px !important;
+            border-radius: 100%;
+            height: 10px !important;
+            width: 10px !important;
+            background: #4E6E81;
+            opacity: 0.3;
+          }
+          .footer-newsletter .shadow {
+            top: 48px !important;
+            width: 70px !important;
+            height: 8px !important;
+          }
+        }
+
+        @media (max-width: 770px) {
+          .footer-newsletter .animated-mail {
+            width: 70px !important;
+            height: 50px !important;
+            position: relative !important;
+          }
+          .footer-newsletter .animated-mail .letter {
+            position: absolute !important;
+            left: 10px !important;
+            bottom: 0 !important;
+            width: 50px !important;
+            height: 28px !important;
+            background: rgba(255,255,255,0.97) !important;
+            z-index: 3 !important;
+            overflow: hidden !important;
+            transition: 0.4s 0.2s;
+            border-radius: 2px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07) !important;
+            display: block !important;
+          }
+        }
+
+        @media (max-width: 770px) {
+          .footer-newsletter .letter-image {
+            width: 60px !important;
+            height: 50px !important;
+            min-width: 60px !important;
+            min-height: 50px !important;
+          }
+          .footer-newsletter .animated-mail {
+            width: 50px !important;
+            height: 40px !important;
+            position: absolute !important;
+            transition: 0.4s;
+            background: transparent;
+          }
+          .footer-newsletter .animated-mail .body {
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 30px 50px;
+            border-color: transparent transparent var(--mail-primary) transparent;
+            z-index: 2;
+            background: transparent;
+          }
+          .footer-newsletter .animated-mail .top-fold {
+            position: absolute;
+            top: 15px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 25px 0 25px;
+            transform-origin: 50% 0%;
+            transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+            border-color: var(--mail-secondary) transparent transparent transparent;
+            z-index: 2;
+            background: transparent;
+          }
+          .footer-newsletter .animated-mail .back-fold {
+            position: absolute;
+            bottom: 0;
+            width: 50px;
+            height: 30px;
+            background: var(--mail-secondary);
+            z-index: 0;
+            opacity: 0.8;
+          }
+          .footer-newsletter .animated-mail .left-fold {
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 0 15px 25px;
+            border-color: transparent transparent transparent var(--mail-tertiary);
+            z-index: 2;
+            background: transparent;
+          }
+          .footer-newsletter .animated-mail .letter {
+            left: 5px !important;
+            bottom: 0px !important;
+            position: absolute !important;
+            width: 40px !important;
+            height: 25px !important;
+            background: rgba(255,255,255,0.9) !important;
+            z-index: 1 !important;
+            overflow: hidden !important;
+            transition: 0.4s 0.2s;
+          }
+          .footer-newsletter .animated-mail .letter .letter-border {
+            height: 4px !important;
+            width: 100% !important;
+            background: repeating-linear-gradient(-45deg, var(--mail-secondary), var(--mail-secondary) 3px, transparent 3px, transparent 6px);
+          }
+          .footer-newsletter .animated-mail .letter .letter-title {
+            margin-top: 4px !important;
+            margin-left: 3px !important;
+            height: 4px !important;
+            width: 40% !important;
+            background: var(--mail-secondary);
+          }
+          .footer-newsletter .animated-mail .letter .letter-context {
+            margin-top: 4px !important;
+            margin-left: 3px !important;
+            height: 4px !important;
+            width: 20% !important;
+            background: var(--mail-secondary);
+          }
+          .footer-newsletter .animated-mail .letter .letter-stamp {
+            margin-top: 4px !important;
+            margin-left: 25px !important;
+            border-radius: 100%;
+            height: 8px !important;
+            width: 8px !important;
+            background: var(--mail-secondary);
+            opacity: 0.3;
+          }
+          .footer-newsletter .shadow {
+            position: absolute;
+            top: 40px !important;
+            left: 50%;
+            width: 50px !important;
+            height: 5px !important;
+            transition: 0.4s;
+            transform: translateX(-50%);
+            border-radius: 100%;
+            background: radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
+            opacity: 0.5;
+          }
+        }
     </style>
 </head>
 <body>
